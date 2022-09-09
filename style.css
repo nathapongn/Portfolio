@@ -658,6 +658,7 @@ footer h5{
     }
     .about-image{
        width: 100%;
+       height: auto;
     }
 }
 /* APP STORE IMAGE ROWS */
