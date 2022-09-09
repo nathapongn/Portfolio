@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nathapong Nurae Portfolio - UX/UI Design">
+    <!-- Desktop Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Poppins Font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins: 200,300,500,600' rel='stylesheet'>
+    <title>Nathapongn - About</title>
+</head>
+<body>
+    <header>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-content">
+                <!-- Nathapongn -->
+                <a id="site-title" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
+                <!-- Navigations -->
+                <div class="header-nav">
+                    <nav>
+                        <!-- Hamburger Menu -->
+                        <div class="ham" alt="Menu" onclick="openmenu()">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="navmenu">
+                            <li><a href="index.html">UX/UI</a></li>
+                            <!-- FOR LATER UPDATE -->
+                            <!-- <li><a href="nathapongn.com/arch">Architecture</a></li> -->
+                            <li class="nav-menu active-menu" ><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="duo">
+            <img class="about-image" src="Asset-About/Me.png" alt="Streaming App">
+            <div class="duotext">
+                <h1 class="header1">I'm <span class="animate"></span></h1>
+                <p class="paragraph1">based in Bangkok, Thailand
+                <br><br>
+                Currently a UX Designer at Digital Ventures Co., Ltd, a fintech subsidiary of SCB (Siam Commercial Bank)
+                working on various B2B digital banking products.
+                <br><br>
+                I love reading non-fiction books, cooking pasta and listening to music on repeats
+                <br><br>
+                Thank you for visiting my online portfolio!
+                </p>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="local-social">
+            <h4>Bangkok, Thailand</h4>
+            <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
+                <div class="linkedin">
+                    <img src="Asset-Home/Social-icon/Linkedin.svg" alt="Go To Linkedin">
+                </div>
+            </a>
+        </div>
+        <h5>Nathapong Nurae 2022. All rights reserved</h5>
+    </footer>
+
+<script src="script.js"></script>
+
+<script src="typed.js"></script>
+<script>
+    var typed = new Typed (".animate", {
+        strings: ["Nat", "a UX Designer"],
+        typeSpeed: 70,
+        backSpeed: 70,
+        loop: true
+    });
+
+</script>
+
+</body>
+</html>

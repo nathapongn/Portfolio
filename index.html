@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nathapong Nurae Portfolio - UX/UI Design">
+    <!-- Desktop Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Poppins Font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins: 200,300,500,600' rel='stylesheet'>
+    <title>Nathapongn - PORTFOLIO</title>
+</head>
+<body>
+<header>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-content">
+            <!-- Nathapongn -->
+            <a id="site-title" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
+            <!-- Navigations -->
+            <div class="header-nav">
+                <nav>
+                    <!-- Hamburger Menu -->
+                    <div class="ham" alt="Menu" onclick="openmenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul class="navmenu">
+                        <li class="nav-menu active-menu"><a href="index.html">UX/UI</a></li>
+                        <!-- FOR LATER UPDATE -->
+                        <!-- <li><a href="nathapongn.com/arch">Architecture</a></li> -->
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+        <!-- HERO BANNER -->
+
+        <div class="hero">
+            <div class="hero-text">
+                <h1 class="header1" id="Hello"><span class="animate2"></span></h1>
+                <p class="paragraph3" id="who">My name is Nat, I'm a UX Designer based in Bangkok, Thailand.</p> 
+                <p class="paragraph3"id="currently">Currently designing at Digital Ventures (SCBx FinTech subsidiary), here to make banking less boring.</p>
+            </div>
+            <img src="Asset-Home/Hero-jump.png" alt="Hello, It's Nat">
+        </div>
+    
+    
+        <!-- PORTFOLIO PORTFOLIO PORTFOLIO -->
+
+        <div class="portfolio">
+
+            <!-- -------------HODL--------------->
+            <a class="grid-item" href="hodl.html">
+                <div class="grid-image">
+                    <img src="Asset-UXUI/Asset-Hodl/thumb.png" alt="HODL Project">
+                </div>
+                <div class="portfolio-overlay">
+                    <h1>HODL</h1>
+                </div>
+            </a>
+
+            <!-- -------------SCB--------------->
+
+            <a class="grid-item" href="scb.html">
+                <div class="grid-image">
+                    <img src="Asset-UXUI/Asset-SCB/thumb.png" alt="SCB Project">
+                </div>
+                <div class="portfolio-overlay">
+                    <h1>SCB</h1>
+                </div>
+            </a>
+
+            <!-- -------------LMWN--------------->
+
+            <a class="grid-item" href="lmwn.html">
+                <div class="grid-image">
+                    <img src="Asset-UXUI/Asset-LMWN/thumb.png" alt="LMWN Project">
+                </div>
+                <div class="portfolio-overlay">
+                    <h1>LMWN</h1>
+                </div>
+            </a>            
+
+        </div>
+</main>
+
+<!-- ---------------FOOTER----------------- -->
+
+<footer>
+    <div class="local-social">
+        <h4>Bangkok, Thailand</h4>
+        <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
+            <div class="linkedin">
+                <img src="Asset-Home/Social-icon/Linkedin.svg" alt="Go To Linkedin">
+            </div>
+        </a>
+    </div>
+    <h5>Nathapong Nurae 2022. All rights reserved</h5>
+</footer>
+
+<!-- Nav-Menu open & close -->
+<script src="script.js"></script>
+
+<script src="typed.js"></script>
+<script>
+    var typed = new Typed (".animate2", {
+        strings: ["Hello!", "Glad to see you here!"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true
+    });
+
+</script>
+
+</body>
+</html>
