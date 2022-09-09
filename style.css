@@ -287,15 +287,16 @@ footer h5{
 /* UNIVERSAL LAYOUT */
 
 .duo{
-    padding-right: 6vmax;
-    padding-left: 6vmax;
+    padding-right: 6vw;
+    padding-left: 6vw;
     padding-top: 5vh;
     padding-bottom: 5vh;
     display: flex;
     align-items: center;
+    text-align: left;
 }
 .duo-reverse{
-    padding-right: 6vmax;
+    padding-right: 6vw;
     padding-left: 12vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
@@ -306,7 +307,7 @@ footer h5{
 .duotext{
     display: flex;
     flex-direction: column;
-    text-align: justify;
+    text-align: left;
 }
 .duotext h1{
     padding-bottom: 2vh;
@@ -658,6 +659,7 @@ footer h5{
     }
     .about-image{
        width: 100%;
+       aspect-ratio: 1:1;
        height: auto;
     }
 }
