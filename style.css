@@ -351,6 +351,10 @@ footer h5{
     width: 45%;
     padding: 6vw;
 }
+.about-text{
+    width: 100%;
+    text-align: left;
+}
 
 /* LEADING HERO BANNER */
 
@@ -661,7 +665,7 @@ footer h5{
     }
     .about-image{
        width: 100%;
-       height: auto;
+       height: 100%;
     }
 }
 /* APP STORE IMAGE ROWS */
