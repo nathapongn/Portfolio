@@ -23,6 +23,7 @@
     font-weight: 300;
     line-height: 1.8;
     font-size: 1rem !important;
+    text-align: left;
 }
 .paragraph2{
     font-weight: 300;
@@ -37,6 +38,7 @@
     font-size: 1rem;
     line-height: 1.8;
     max-width: 55ch;
+    text-align: left;
 }
 .animate, .animate2{
     font-size: 2rem;
@@ -659,7 +661,6 @@ footer h5{
     }
     .about-image{
        width: 100%;
-       aspect-ratio: 1:1;
        height: auto;
     }
 }
