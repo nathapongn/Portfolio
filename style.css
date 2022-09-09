@@ -299,7 +299,7 @@ footer h5{
 }
 .duo-reverse{
     padding-right: 6vw;
-    padding-left: 12vw;
+    padding-left: 10vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
     display: flex;
@@ -613,6 +613,7 @@ footer h5{
         font-size: 1rem;
     }
     .duo-reverse{
+        padding-left: 6vw !important;
         display: flex;
         flex-direction: column;
     }
