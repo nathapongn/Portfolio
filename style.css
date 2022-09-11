@@ -580,6 +580,12 @@ footer h5{
         margin: 0;
         font-size: calc((1.4 - 1) * 1.2vh + 0.7rem);
     }
+
+
+    /* Divider */
+    .divider{
+        width: 100% !important;
+    }
     /* FOOTER */
     footer{
         padding-left: 6vw;
