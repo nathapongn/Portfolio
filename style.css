@@ -362,6 +362,10 @@ footer h5{
 }
 
 /* DIVIDER */
+.divider{
+    width: 100%;
+    max-width: 75ch;
+}
 .head-divider{
     padding-right: 6vmax;
     padding-left: 6vmax;
@@ -575,6 +579,12 @@ footer h5{
     .hero-text p{
         margin: 0;
         font-size: calc((1.4 - 1) * 1.2vh + 0.7rem);
+    }
+
+
+    /* Divider */
+    .divider{
+        width: 100% !important;
     }
     /* FOOTER */
     footer{
