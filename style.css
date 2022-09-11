@@ -362,6 +362,10 @@ footer h5{
 }
 
 /* DIVIDER */
+.divider{
+    width: 100%;
+    max-width: 75ch;
+}
 .head-divider{
     padding-right: 6vmax;
     padding-left: 6vmax;
