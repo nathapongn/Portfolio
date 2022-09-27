@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Nathapong Nurae - Portfolio">
+    <meta property="og:description" content="UX/UI Portfolio & collection of works by Nathapong Nurae">
+    <meta property="og:image" itemprop="image" content="img2/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="http://nathapongn.github.io">
+    <meta property="og:image:alt" content="img/favicon.ico">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="android-chrome" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    
+    <!-- Font Import -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins: 200,300,500,600' rel='stylesheet'>
+
+    <header>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-content">
+                <!-- Nathapongn -->
+                <a id="site-title" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
+                <!-- Navigations -->
+                <div class="header-nav">
+                    <nav>
+                        <!-- Hamburger Menu -->
+                        <div class="ham" alt="Menu" onclick="openmenu()">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="navmenu">
+                            <li class="nav-menu"><a href="index.html">UX/UI</a></li>
+                            <li class="nav-menu active-menu"><a href="arch.html">Architecture</a></li>
+                            <!-- FOR LATER UPDATE -->
+                            <!-- <li><a href="nathapongn.com/arch">Architecture</a></li> -->
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mini Hero -->
+    <main>
+        <div class="hero">
+            <div class="hero-text">
+                <h1 class="header1" id="arch-head">Architecture Works</h1>
+                <p class="paragraph3"id="currently">As I used to be an architecture student, here are some of my favorite personal & university individual projects.</p>
+            </div>
+            <img src="Asset-Home/Student Residence.png" alt="Hello, It's Nat">
+        </div>
+
+
+        <div class="portfolio">
+
+            <!-- -------------168 ThongLor--------------->
+            <a class="grid-item" href="#">
+                <div class="grid-image">
+                    <img src="Asset-Arch/Thumb/168 Thonglor.png" alt="168 ThongLor Residence Project">
+                </div>
+                <div class="portfolio-overlay">
+                    <h1>168 ThongLor</h1>
+                </div>
+            </a>
+
+            <!-- -------------S53--------------->
+
+            <a class="grid-item" href="S53.html">
+                <div class="grid-image">
+                    <img src="Asset-Arch/Thumb/8 Thonglor.png" alt="S53 Private Residence">
+                </div>
+                <div class="portfolio-overlay">
+                    <h1>S53</h1>
+                </div>
+            </a>
+
+            <!-- -------------TU--------------->
+
+            <a class="grid-item" href="TU.html">
+                <div class="grid-image">
+                    <img src="Asset-Arch/Thumb/TU Residence.png" alt="Thammasat University Student Residence Project">
+                </div>
+                <div class="portfolio-overlay">
+                    <h1>Student Residence</h1>
+                </div>
+            </a>            
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="local-social">
+            <h4>Bangkok, Thailand</h4>
+            <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
+                <div class="linkedin">
+                    <img src="Asset-Home/Social-icon/Linkedin.svg" alt="Go To Linkedin">
+                </div>
+            </a>
+        </div>
+        <h5>Nathapong Nurae 2022. All rights reserved</h5>
+    </footer>
+
+    <!-- JAVASCRIPT Insert -->
+
+    <script src="script.js"></script>
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed (".animate2", {
+            strings: ["Hello!", "Glad to see you!"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    
+    </script>
+</body>
+</html>

@@ -18,6 +18,35 @@
     font-size: 1.2rem;
 }
 
+/* CLASSIC */
+.header-classic{
+    font-family: "Brygada 1918", 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 4rem;
+}
+.header-classic-small{
+    font-size: 3rem;
+    font-family: "Brygada 1918", 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+.p-classic{
+    font-family: "Brygada 1918", 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.p-classic-small{
+    font-family: "Brygada 1918", 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #4b4b4b;
+    text-align: center;
+}
+.mini-hero .p-classic-small{
+    margin-top: 2vh;
+}
+
+
+
 .paragraph1{
     color:#1b2128;
     font-weight: 300;
@@ -39,6 +68,15 @@
     line-height: 1.8;
     max-width: 55ch;
     text-align: left;
+}
+.paragraph4{
+    font-weight: 500;
+    color:#1b2128;
+    font-size: 1.2rem;
+    line-height: 2;
+    max-width: 55ch;
+    text-align: center;
+    margin: auto;
 }
 .animate, .animate2{
     font-size: 2rem;
@@ -84,6 +122,20 @@ hr{
 #site-title:hover{
     opacity: 80%;
 }
+
+/* Mini Hero */
+.mini-hero{
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-bottom: 4vh;
+    margin-top: 18vh;
+    text-align: center;
+}
+.mini-hero #arch-head{
+    margin-bottom: 1vh;
+
+}
+
 
 /* Navigation Menu */
 
@@ -287,7 +339,17 @@ footer h5{
 
 
 /* UNIVERSAL LAYOUT */
-
+.single-image-large img{
+    width: 100%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 8vh;
+    padding-bottom: 2vh;
+    margin: auto;
+}
+.single-image-large{
+    margin-bottom: 1vh;
+}
 .duo{
     padding-right: 6vw;
     padding-left: 6vw;
@@ -391,8 +453,34 @@ footer h5{
     display: block;
     margin: auto;
 }
-
-
+#TU-context img{
+    padding: 8vw 8vw 4vh 8vw;
+}
+#TU-Stats {
+    width: 80%;
+    margin: auto;
+}
+#TU-Floorplan{
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* PAIR IMAGE */
+.pair{
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+}
+.pair img{
+    width: 80vh;
+    height: 60%;
+}
 /* FULL IMAGE */
 
 .hero-banner img{
@@ -500,7 +588,14 @@ footer h5{
     .header1{
         font-size: 1.5rem;
     }
-
+    .pair{
+        flex-direction: column;
+        margin: auto;
+    }
+    .pair img{
+        max-width: 90%;
+        margin: auto;
+    }
     .bar{
         display: block;
         width: 25px;
@@ -635,6 +730,17 @@ footer h5{
         width: 100%; 
         margin: auto;
     }
+    
+    .single-image-large img{
+        width: 100%;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        margin: auto;
+    }
+    .single-image-large{
+        margin-bottom: 1vh;
+    }
+
     /* SMALL DUO */
     .duo-image-small {
         width: 100%;
