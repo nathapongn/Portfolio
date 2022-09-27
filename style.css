@@ -293,6 +293,30 @@ hr{
     margin-top: 30%;
     font-weight: 600;
 }
+#hodl{
+    background: linear-gradient(105deg, #3541ca, #4e7aec, #9c6dff, #f31f6c);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
 
 
 /* -------------Footer------------- */
