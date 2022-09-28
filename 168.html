@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nathapong - 168 ThongLor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Nathapong Nurae - Portfolio">
+    <meta property="og:description" content="UX/UI Portfolio & collection of works by Nathapong Nurae">
+    <meta property="og:image" itemprop="image" content="img2/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="http://nathapongn.github.io">
+    <meta property="og:image:alt" content="img/favicon.ico">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="android-chrome" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+
+    <!-- Poppins Font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins: 200,300,500,600' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="header-content">
+                <!-- Nathapongn -->
+                <a id="site-title" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
+                <!-- Navigations -->
+                <div class="header-nav">
+                    <nav>
+                        <!-- Hamburger Menu -->
+                        <div class="ham" alt="Menu" onclick="openmenu()">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="navmenu">
+                            <li class="nav-menu"><a href="index.html">UX/UI</a></li>
+                            <li class="nav-menu active-menu"><a href="arch.html">Architecture</a></li>
+                            <!-- FOR LATER UPDATE -->
+                            <!-- <li><a href="nathapongn.com/arch">Architecture</a></li> -->
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+            <!-- Title and Description -->
+        <div class="mini-hero">
+            <h1 class="header1" id="arch-head">168 ThongLor</h1>
+            <p class="paragraph2">Private Residence at Sukhumvit 55</p>
+        </div>
+        <div class="single-center">
+            <img src="Asset-Arch/Asset-168/Exterior2.png" alt="Exterior Elevation of the Building's Facade">
+        </div>
+        <section class="slider-container">
+
+            <div class="chevron" id="chev-left" onclick="scrolll()">
+                <img src="Icons/Chev-L.svg" alt="Click to View another Image">
+            </div>
+
+            <div class="slider-wrapper">
+
+                <div class="slider">
+                    <img id="slide-1" src="Asset-Arch/Asset-168/S1.png" alt="Simplex Floor Plan">
+                    <img id="slide-2" src="Asset-Arch/Asset-168/PH1.png" alt="Penthouse 1 Lower Floor Plan">
+                    <img id="slide-3" src="Asset-Arch/Asset-168/PH1U.png" alt="Penthouse 1 Upper Floor Plan">
+                    <img id="slide-4" src="Asset-Arch/Asset-168/PH2.png" alt="Penthouse 2 Lower Floor Plan">
+                    <img id="slide-5" src="Asset-Arch/Asset-168/PH2U.png" alt="Penthouse 2 Upper Floor Plan">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                </div>
+
+
+            </div>
+
+            <div class="chevron" id="chev-right" onclick="scrollr()">
+                <img src="Icons/Chev-R.svg" alt="Click to View another Image">
+            </div>
+
+        </section>
+
+        <section class="head-divider">
+            <h1 class="header1">Interior</h1>
+            <img src="Icons/Kebab.svg" alt="Divider">
+        </section>
+
+        <section>
+            <div class="single-center">
+                <img src="Asset-arch/Asset-168/Interior/Salon.png" alt="Grand Salon">
+                <h2 class="paragraph2">Grand Salon</h2>
+            </div>
+            <div class="single-center">
+                <img src="Asset-arch/Asset-168/Interior/Dining.png" alt="Dining Area with Breakfast bar">
+                <h2 class="paragraph2">Dining Area</h2>
+            </div>
+            <div class="single-center">
+                <img src="Asset-arch/Asset-168/Interior/Kitchen2.PNG" alt="Living Area">
+                <h2 class="paragraph2">Living Area</h2>
+            </div>
+            <div class="single-center">
+                <img src="Asset-arch/Asset-168/Interior/Garage.png" alt="In-Unit Garage">
+                <h2 class="paragraph2">In-Unit Garage</h2>
+            </div>
+            <div class="single-center">
+                <img src="Asset-arch/Asset-168/Interior/Bed1.png" alt="Bedroom View">
+                <h2 class="paragraph2">Bedroom</h2>
+            </div>
+            <div class="single-center">
+                <img src="Asset-arch/Asset-168/Interior/Night.png" alt="Bedroom Night View">
+                <h2 class="paragraph2">Bedroom 2</h2>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- THANK YOU -->
+
+    <section class="thankyou">
+        <h1 class="header1">Thank you</h1>
+        <p class="paragraph2">Feel free to contact me via LinkedIn for further questions</p>
+        <img src="Icons/Kebab.svg" alt="Divider">
+    </section>
+
+    </main>
+
+
+    <footer>
+        <div class="local-social">
+            <h4>Bangkok, Thailand</h4>
+            <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
+            <div class="linkedin">
+                <img src="Asset-Home/Social-icon/Linkedin.svg" alt="Go To Linkedin">
+            </div>
+            </a>
+        </div>
+        <h5>Nathapong Nurae 2022. All rights reserved</h5>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

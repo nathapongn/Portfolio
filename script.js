@@ -12,4 +12,13 @@ var typed = new Typed(".auto-type", {
     backSpeed: 150,
     loop: true
 })
+// slider
+function scrolll(){
+    var left=document.querySelector(".slider")
+    left.scrollBy(-785, 0)
+}
+function scrollr(){
+    var right=document.querySelector(".slider")
+    right.scrollBy(785, 0)
+}
 
