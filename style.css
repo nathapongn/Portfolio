@@ -129,8 +129,9 @@ hr{
 }
 .slider{
     display: flex;
-    overflow-x: auto;
+    object-fit:fill;
     aspect-ratio: 16/9;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -142,27 +143,6 @@ hr{
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
-}
-.slider-nav {
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #0A2540;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-.slider-nav a:hover{
-    opacity: 1;
-    background-color: black;
 }
 
 /* "Nathapongn" in the navigation bar */
