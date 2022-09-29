@@ -143,6 +143,7 @@ hr{
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
+    height: auto !important; 
 }
 
 /* "Nathapongn" in the navigation bar */
