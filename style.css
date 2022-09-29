@@ -105,46 +105,6 @@ hr{
     margin-bottom: 6vh;
     width: 75ch;
 }
-/* Slider */
-.slider-wrapper{
-    position: relative;
-    max-width: 80%;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 3vw;
-    padding-right: 3vw;
-}
-.slider-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 3vw;
-    padding-right: 3vw;
-}
-.chevron{
-    cursor: pointer;
-}
-.chevron img{
-    width: 3rem
-}
-.slider{
-    display: flex;
-    object-fit:fill;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-}
-.slider::-webkit-scrollbar{
-    display: none;
-}
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: start;
-    height: auto !important; 
-}
 
 /* "Nathapongn" in the navigation bar */
 
