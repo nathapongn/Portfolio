@@ -317,19 +317,18 @@ hr{
 }
 .grid-item{
     position: relative;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
+    
 
 }
 .grid-item:hover{
     scale: 1.05;
-    transition: 0.4s ease-in-out;
-    transition-delay: 0.2s;
-    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-    
-    -o-transition:  0.4s ease-in-out; /* opera */
-    -ms-transition:  0.4s ease-in-out; /* IE 10 */
-    -moz-transition:  0.4s ease-in-out; /* Firefox */
-    -webkit-transition:  0.4s ease-in-out; /*safari and chrome */
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.35) 0px 10px 35px 0px; 
+    -o-transition:  0.3s ease-in-out; /* opera */
+    -ms-transition:  0.3s ease-in-out; /* IE 10 */
+    -moz-transition:  0.3s ease-in-out; /* Firefox */
+    -webkit-transition:  0.3s ease-in-out; /*safari and chrome */
 }
 
 .grid-image{
@@ -341,13 +340,12 @@ hr{
 }
 
 
-/* ------------OVERLAY NOT HOVER------------ */
-
+/* HIDE FOR NOW, See which is better with or without text */
 .portfolio-overlay{
     opacity: 0;
     position: absolute;
     display: block;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.0);
     top: 0;
     left: 0;
     width: 100%;
@@ -360,7 +358,6 @@ hr{
     transition: 0.4s;
 }
 
-/* OVERLAY WHEN HOVER */
 .portfolio-overlay:hover{
     opacity: 1;
 }
@@ -368,8 +365,10 @@ hr{
 .portfolio-overlay h1{
     display: inline-block;
     margin-top: 30%;
+    opacity: 0;
     font-weight: 600;
 }
+
 #hodl-phone{
     z-index: 99;
 }
