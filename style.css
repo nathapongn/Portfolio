@@ -381,7 +381,7 @@ hr{
     transition: 0.2s cubic-bezier(0.34, 1, 0.42, 1);
 }
 
-.scb-hover-frame:hover + #plane{
+.scb-hover-frame:hover > #plane{
     opacity: 1;
     top: 10%;
     left: 60%;
