@@ -372,8 +372,8 @@ hr{
 #icon-plane{
     pointer-events: none;
     opacity: 0;
-    position: absolute;
-    z-index: 100;
+    position: absolute !important;
+    z-index: 99;
     width: 20%;
     left: 40%;
     top: 40%;
