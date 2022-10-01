@@ -378,7 +378,6 @@ hr{
     top: 40%;
     transform: rotate(10deg);
     transition: 0.2s cubic-bezier(0.34, 1, 0.42, 1);
-    /* Add Delay here so plane don't push onto screen */
 }
 .scb-hover-frame:hover + #icon-plane{
     opacity: 1;
