@@ -351,6 +351,12 @@ hr{
     transform:rotate(10deg);
 }
 /* HAND WHEN HOVERED OVER FRAME */
+/* FRAME WHEN HOVERED */
+.scb-hover-frame:hover{
+    background-color: #fff;
+    transition: 0.6s;
+}
+
 .scb-hover-frame:hover > #scb-hand{
     opacity: 1;
     bottom: -15vh;
@@ -358,18 +364,13 @@ hr{
     left: 4vw;
     transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-/* FRAME WHEN HOVERED */
-.scb-hover-frame:hover{
-    background-color: #fff;
-    transition: 0.6s;
-    transition-delay: 0.2s;
-}
 #scb-hand{
     position: absolute;
     transition: 0.4s;
 }
 /* PLANE ICON HOVER */
 #icon-plane{
+    pointer-events: none;
     opacity: 0;
     position: absolute;
     z-index: 100;
@@ -379,6 +380,7 @@ hr{
     transform: rotate(10deg);
     transition: 0.2s cubic-bezier(0.34, 1, 0.42, 1);
 }
+
 .scb-hover-frame:hover + #icon-plane{
     opacity: 1;
     top: 10%;
