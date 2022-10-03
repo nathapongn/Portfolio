@@ -252,6 +252,7 @@ hr{
     display: flex;
     gap: 24px;
     padding: 6vw;
+    justify-content: center;
 }
 .portfolio a img{
     width: 100%;
