@@ -201,7 +201,7 @@ hr{
     background: #0A2540;
     left: 0;
     bottom: -2px;
-
+    position: absolute;
 }
 
 /* Nav Underline */
