@@ -142,9 +142,12 @@ hr{
 
 /* Navigation Menu */
 
+.header.blurred{
+    background-color: white;
+}
 .header{
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255,255,255, 0.7);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     width: 100%;
@@ -156,11 +159,12 @@ hr{
     padding-left: 6vw;
     padding-right: 6vw;
     pointer-events: auto;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     z-index: 99;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.header-content{
+.header-content {
     display: flex;
     width: 100%;
     box-sizing: border-box;

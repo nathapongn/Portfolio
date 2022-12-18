@@ -22,3 +22,6 @@ function scrollr(){
     right.scrollBy(785, 0)
 }
 
+//header change transparent to blurred
+
+
