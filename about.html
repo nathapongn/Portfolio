@@ -59,15 +59,15 @@
 
     <main>
         <section id="duo-about" class="duo">
-            <img id="Me" class="duo-image" src="Asset-About/Color.png" alt="Photo of Me in Black and White">
+            <!-- <img id="Me" class="duo-image" src="Asset-About/Color.png" alt="Photo of Me in Black and White"> -->
             <div class="duotext">
                 <h1 class="header1">I'm <span class="animate"></span></h1>
                 <p class="about-text">based in Bangkok, Thailand
                 <br><br>
-                Currently a UX Designer at Digital Ventures Co., Ltd, a fintech subsidiary of SCB (Siam Commercial Bank)
+                Currently a UX Designer at SCB - Siam Commercial Bank
                 working on various B2B digital banking products.
                 <br><br>
-                I love reading non-fiction books and listening to music on repeats
+                I love reading non-fictions and listening to music on repeats
                 <br><br>
                 Thank you for visiting my online portfolio!
                 </p>
@@ -108,16 +108,11 @@ let scrolled = false;
 window.onscroll = function() {
 if(window.pageYOffset > 100) {
     header.classList.remove('blurred');
-    if(!scrolled){
-        header.style.transform = 'translateY(-100%)';
-    }
-    setTimeout(function(){
-        header.style.transform = 'translateY(0)';
-    }, 700)
 } else {
     header.classList.add('blurred');
 }
 }
+</script>
 </script>
 </body>
 </html>

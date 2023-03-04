@@ -21,6 +21,7 @@
     
     <!-- Desktop Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
     <!-- Poppins Font -->
     <link href='https://fonts.googleapis.com/css?family=Poppins: 200,300,500,600' rel='stylesheet'>
@@ -61,17 +62,23 @@
         <img src="Asset-UXUI/Asset-LMWN/Banner2.png" alt="LINE MAN Wongnai Internship">
     </div>
     
-    <article class="simple-text">
-        <section class="textbox">
+    <section class="article">
+        <div class="article-text">
             <h1 class="header1">LINE MAN Wongnai Internship</h1>
-            <p class="paragraph1">Starting in late May 2022, I was offered the opportunity to intern as a UX Designer at LINE MAN Wongnai and was assigned into the “Restaurant squad” which oversees the design of Wongnai Merchant Application also known as WMA which is used by over half a million restaurants all over Thailand to manage menus, coupons, and deliveries to over a million customers daily through LINE MAN application etc.</p>
-        </section>
-        <hr class="divider">
-        <section class="textbox">
-            <h1 class="header1">Experience</h1>
-            <p class="paragraph1">Having only a single UX Design internship experience prior in the finance field, my experience at LINE MAN Wongnai was one of the most memorable, independent and challenging internship where I was given full ownership of several real tasks that get implemented and built. I experienced a fast-paced design process, frequent design critique sessions, close communication to product managers & developers where I learned the importance of design iterations and alternatives to work around unfeasible technical and/or inevitable business limitations.</p>
-        </section>
-    </article>
+            <div class="article-text-content">
+                <h2 class="header2">Internship</h2>
+                <p1 class="paragraph1">During the summer of 2022, I got the opportunity to intern as a UX/UI Designer at LINE MAN Wongnai, one of Thailand's most popular food delivery platform. I was assigned into the "Restaurant Squad" that oversees the design of Wongnai Merchant Application used by over half a million merchants.<br><br>My 3 months internship involves conducting Merchants' pain points research and prototyping & proposal of released projects including Coupon & Promotion management flow, Ads Manager, and new Merchant Rank menu.</p1>
+            </div>
+        </div>
+        <div class="article-text">
+            <div class="article-text-content">
+                <h2 class="header2">Experience</h2>
+                <p1 class="paragraph1">Internship at LINE MAN Wongnai was definitely one of the most memorable, independent and challenging internship where I was given full ownership of several real tasks with actual release plan. 
+                <br><br>
+                I got to experience a fast-paced design process and working across cross-functional teams including product managers & developers where I learned the importance of clear design communication and design iterations when technical or business limitations arises.</p1>
+            </div>
+        </div>
+    </section>
 
     <section class="row">
         <div class="image-caption">
@@ -123,12 +130,6 @@ let scrolled = false;
 window.onscroll = function() {
 if(window.pageYOffset > 100) {
     header.classList.remove('blurred');
-    if(!scrolled){
-        header.style.transform = 'translateY(-100%)';
-    }
-    setTimeout(function(){
-        header.style.transform = 'translateY(0)';
-    }, 700)
 } else {
     header.classList.add('blurred');
 }

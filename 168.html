@@ -8,6 +8,7 @@
     <title>Nathapong - 168 ThongLor</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
     <!-- OPEN GRAPH -->
     <meta property="og:title" content="Nathapong Nurae - Portfolio">
@@ -134,16 +135,10 @@
     <script>
         const header = document.getElementById('header'); 
     let scrolled = false;
-
+    
     window.onscroll = function() {
     if(window.pageYOffset > 100) {
         header.classList.remove('blurred');
-        if(!scrolled){
-            header.style.transform = 'translateY(-100%)';
-        }
-        setTimeout(function(){
-            header.style.transform = 'translateY(0)';
-        }, 700)
     } else {
         header.classList.add('blurred');
     }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architecture</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,53 +59,83 @@
         </div>
     </header>
 
-    <!-- Mini Hero -->
     <main>
+        <!-- HERO BANNER -->
+
         <div class="hero">
             <div class="hero-text">
-                <h1 class="header1" id="arch-head">Architecture Works</h1>
-                <p class="paragraph3"id="currently">As I used to be an architecture student, here are some of my favorite personal & university individual projects.</p>
+                <h1 class="header1">Architecture Works</h1>
+                <p class="paragraph3"id="currently">As I used to be an architecture students, here are some of my favorite individual projects.</p>
             </div>
-            <img id="Arch-cover" src="Asset-Home/Student Residence.png" alt="Hello, It's Nat">
+            <img class="hero-image" src="Asset-Home/Hero-Arch.svg" alt="Architecture Works">
         </div>
 
+                <!-- PORTFOLIO PROJECT -->
 
-        <div class="portfolio">
+              
+                <div class="portfolio-project" id="project">
+                    <!-- Student Residence -->
+                    <a href="TU.html" class="portfolio-block">
+                        
+                        <div class="portfolio-thumbnail">
+                            <!-- Actual Thumbnail -->
+                            <img src="Asset-Arch/Asset-TU/Summer2.png" alt="" class="thumbnail-image arch">
+                        </div>
+        
+                        <!-- Title / Description / Read More Button -->
+                        <div class="portfolio-text">
+                            <div class="portfolio-description">
+                                <h1 class="portfolio-title">TU Student Residence</h1>
+                                <p class="portfolio-subtitle">Thammasat University, Rangsit Campus</p>    
+                            </div>
+                            <div class="explore-button-icon">
+                                <button class="explore">Read More</button>
+                                <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- S53 -->
+                    <a href="S53.html" class="portfolio-block">
+                        
+                        <div class="portfolio-thumbnail">
+                            <!-- Actual Thumbnail -->
+                            <img src="Asset-Arch/Asset-S53/Living.png" alt="" class="thumbnail-image arch">
+                        </div>
+        
+                        <!-- Title / Description / Read More Button -->
+                        <div class="portfolio-text">
+                            <div class="portfolio-description">
+                                <h1 class="portfolio-title">S53</h1>
+                                <p class="portfolio-subtitle">Sukhumvit 53 Private Residence</p>    
+                            </div>
+                            <div class="explore-button-icon">
+                                <button class="explore">Read More</button>
+                                <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 168 Thonglor -->
+                    <a href="168.html" class="portfolio-block">
+                        
+                        <div class="portfolio-thumbnail">
+                            <!-- Actual Thumbnail -->
+                            <img src="Asset-Arch/Asset-168/Kitchen2.png" alt="" class="thumbnail-image arch">
+                        </div>
+        
+                        <!-- Title / Description / Read More Button -->
+                        <div class="portfolio-text">
+                            <div class="portfolio-description">
+                                <h1 class="portfolio-title">168 ThongLor</h1>
+                                <p class="portfolio-subtitle">High-Rise Private Residence</p>    
+                            </div>
+                            <div class="explore-button-icon">
+                                <button class="explore">Read More</button>
+                                <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                            </div>
+                        </div>
+                    </a>
 
-            <!-- -------------168 ThongLor--------------->
-            <a class="grid-item" href="168.html">
-                <div class="grid-image">
-                    <img src="Asset-Arch/Thumb/168 Thonglor.png" alt="168 ThongLor Residence Project">
                 </div>
-                <div class="portfolio-overlay">
-                    <h1>168 ThongLor</h1>
-                </div>
-            </a>
-
-            <!-- -------------S53--------------->
-
-            <a class="grid-item" href="S53.html">
-                <div class="grid-image">
-                    <img src="Asset-Arch/Thumb/8 Thonglor.png" alt="S53 Private Residence">
-                </div>
-                <div class="portfolio-overlay">
-                    <h1>S53</h1>
-                </div>
-            </a>
-
-            <!-- -------------TU--------------->
-
-            <a class="grid-item" href="TU.html">
-                <div class="grid-image">
-                    <img src="Asset-Arch/Thumb/TU Residence.png" alt="Thammasat University Student Residence Project">
-                </div>
-                <div class="portfolio-overlay">
-                    <h1>Student Residence</h1>
-                </div>
-            </a>            
-
-        </div>
-
     </main>
 
 
@@ -137,16 +168,10 @@
     <script>
         const header = document.getElementById('header'); 
     let scrolled = false;
-
+    
     window.onscroll = function() {
     if(window.pageYOffset > 100) {
         header.classList.remove('blurred');
-        if(!scrolled){
-            header.style.transform = 'translateY(-100%)';
-        }
-        setTimeout(function(){
-            header.style.transform = 'translateY(0)';
-        }, 700)
     } else {
         header.classList.add('blurred');
     }
