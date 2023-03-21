@@ -43,7 +43,11 @@ img.hero-image{
 /* Universal Text Style */
 
 /* UNIVERSAL TEXT STYLE */
-
+.hero-large-text{
+    color:#0A2540;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
 .header1{
     color:#0A2540;
     font-weight: 500;
@@ -121,7 +125,7 @@ img.hero-image{
     margin: auto;
 }
 .animate, .animate2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 .simple-text{
