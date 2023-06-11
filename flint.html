@@ -30,9 +30,8 @@
     <!-- iOS Emoji -->
     <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
 
-
-
     <title>Nathapongn - Flint</title>
+
 </head>
 <body>
     <header>
@@ -61,6 +60,7 @@
                 </div>
             </div>
         </div>
+        <div class="progress-bar"></div>
     </header>
 
 
@@ -77,10 +77,10 @@
                     <h1 class="header1">Contextual Problems</h1>
                 <div class="article-text-content">
                     <h2 class="header2">1. Most of Us aren't Ready</h2>
-                    <p1 class="paragraph1">In 2021, less than 50% of Thais have sufficient savings or investment enough for their retirement according to the NRRI (National Retirement Readiness Index) published by Chulalongkorn University.
+                    <p1 class="paragraph1">In 2021, the NRRI (National Retirement Readiness Index) published by Chulalongkorn University revealed that less than 50% of Thais have adequate savings or investments for retirement.
                     <br>
                     <br>
-                    This is particularly concerning for the upcoming generation Z and younger due to various reasons including:</p1>
+                    This is particularly concerning for Generation Z and younger individuals due to several factors including:</p1>
                     <br>
                     <br>
                     <ul class="article-list">
@@ -99,10 +99,7 @@
             <div class="article-text">
             <div class="article-text-content">
                 <h2 class="header2">2. Limited Options</h2>
-                <p1 class="paragraph1">Since 2009, “Streaming” app has been Thailand's one and only major stock trading application with its infamous ticker board interface design which hasn't changed for over 12 years.
-                <br>
-                <br>
-                This has worked out fine in the past. But as younger people, those well used & adjusted to new modern globalized platform design language, will eventually become one of the major investors in the near future, Streaming may not be best suited to encourage & educate beginners all while accommodating their higher expectations.</p1>
+                <p1 class="paragraph1">Since 2009, Thailand has relied on the "Streaming" app as its sole major stock trading platform, featuring an unchanged ticker board interface design for over 12 years. While this platform has been successful in the past, younger individuals, who are accustomed to modern platform design language, Streaming may not be well suited for the upcoming potential users.</p1>
             </div>
         </section>
 
@@ -112,10 +109,7 @@
             <div class="article-text">
                 <div class="article-text-content">
                     <h2 class="header2">3. It's Easier to Spend</h2>
-                    <p1 class="paragraph1">As Thailand continues to rapidly adopts cashless payment, there has been an overwhelming boom of new platforms that continue to introduce more ways for us to spend & borrow money effortlessly.
-                    <br>
-                    <br>
-                    But fewer to no platforms that encourage people to save & invest for their future selves. While Streaming and other outdated investing platforms continue to thrive through lack of competition.</p1>
+                    <p1 class="paragraph1">Thailand's rapid adoption of cashless payment has led to a surge in new platforms that provide convenient options for spending and borrowing money. However, there is a noticeable lack of platforms that promote saving and investing for the future. While Streaming and other outdated investment platforms thrive due to limited competition.</p1>
                 </div>
             </div>
         </section>
@@ -225,8 +219,6 @@
         <section class="topic ds flip">
 
             <div class="ticker-scroll">
-                <img class="play-state play" src="Icons/ICN-Play.svg" alt="Hover to Pause">
-                <img class="play-state pause" src="Icons/ICN-Pause.svg" alt="Hover to Pause">
                 <img class="screen-overlay" src="Asset-UXUI/Asset-Flint/DesignSol/Empty.png" alt="Ticker Detail Page"/> 
                 <img class="screen-scroll" src="Asset-UXUI/Asset-Flint/Screen.png" alt="Ticker Detail Page"/> 
             </div>
@@ -242,8 +234,6 @@
                 </lord-icon>
                 <h1 class="subheader">Ticker</h1>
                 <p class="paragraph1">Complete with all the essential information specific to each ticker including market status, basic statistics, earnings charts, company info, and index composition. Helping investors stay well informed. 
-                <br><br>
-                [Hover on Phone to Pause]
                 </p>
             </div>
         </section>
@@ -402,7 +392,7 @@
 
         <!-- Showcase -->
         <section class="article">
-            <img class="article-image" src="Asset-UXUI/Asset-Flint/Showcase/ad.png">
+            <img class="article-image" src="Asset-UXUI/Asset-Flint/Showcase/ad.jpg">
         </section>
 
         <section class="thankyou">
@@ -441,6 +431,16 @@
         header.classList.add('blurred');
     }
     }
+
+    function updateProgressBar(){
+    const {scrollTop, scrollHeight} = document.documentElement;
+    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100 + '%';
+    console.log(scrollPercent);
+    document.querySelector('.progress-bar').style.setProperty('--progress', scrollPercent);
+    }
+
+    document.addEventListener('scroll', updateProgressBar)
+    
     </script>
     </body>
     </html>

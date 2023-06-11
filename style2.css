@@ -298,20 +298,7 @@ img#flint-logo-th{
     animation-duration: 12s;
     animation-iteration-count: infinite;
 }
-.ticker-scroll:hover > .screen-scroll{
-    animation-play-state: paused;
-}
-.ticker-scroll:hover > .play-state.pause{
-    opacity: 25%;
-}
 
-.play-state{
-    position: absolute;
-    right: 5%;
-    width: 64px;
-    opacity: 0%;
-    z-index: 3;
-}
 
 @keyframes screen-scroll {
     0% {

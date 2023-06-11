@@ -56,7 +56,9 @@
                 </div>
             </div>
         </div>
+        <div class="progress-bar"></div>
     </header>
+
 <main>
     <div class="hero-project">
         <img src="Asset-UXUI/Asset-LMWN/Banner2.png" alt="LINE MAN Wongnai Internship">
@@ -134,6 +136,16 @@ if(window.pageYOffset > 100) {
     header.classList.add('blurred');
 }
 }
+
+    function updateProgressBar(){
+    const {scrollTop, scrollHeight} = document.documentElement;
+    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100 + '%';
+    console.log(scrollPercent);
+    document.querySelector('.progress-bar').style.setProperty('--progress', scrollPercent);
+    }
+
+    document.addEventListener('scroll', updateProgressBar)
+    
 </script>
 </body>
 </html>

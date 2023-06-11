@@ -22,6 +22,19 @@ function scrollr(){
     right.scrollBy(785, 0)
 }
 
-//header change transparent to blurred
 
 
+//run function that compares total height to current position
+function updateProgressBar(){
+    const {scrollTop, scrollHeight} = document.documentElement;
+    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100 + '%';
+    console.log(scrollPercent);
+    //update the width
+    document.querySelector('.progress-bar').style.setProperty('--progress', scrollPercent);
+}
+
+
+
+
+//event listens for scroll
+document.addEventListener('scroll', updateProgressBar)
