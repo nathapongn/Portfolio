@@ -639,6 +639,7 @@ img.thumbnail-image.lmwn{
     height: 100vh;
     margin-top: 10vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -652,6 +653,9 @@ img.thumbnail-image.lmwn{
     width: 10vw;
     min-width: 120px;
     max-width: 10vw;
+}
+#hero-banner-il{
+    object-fit: cover;
 }
 
 
