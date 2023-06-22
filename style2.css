@@ -656,6 +656,7 @@ img.thumbnail-image.lmwn{
 }
 #hero-banner-il{
     object-fit: cover;
+    width: auto;
 }
 
 
