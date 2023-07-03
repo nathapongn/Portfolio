@@ -32,17 +32,25 @@ img.hero-image{
     max-width: 500px;
     padding: 3%;
 }
-
 .More{
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
+/* Progress bar */
+.progress-bar{
+    --progress: 0;
+    height: 4px;
+    width: var(--progress);
+    background: linear-gradient(90deg, rgba(71,118,230,1) 0%, rgba(142,84,233,1) 50%, rgba(255,0,153,1) 100%);
+    position: fixed;
+    z-index: 100;
+    border-radius: 0 4px 4px 0;
+}
 
-/* -------------------------------------------- */
 
 /* Universal Text Style */
 
-/* UNIVERSAL TEXT STYLE */
+/* Header Texts */
 .hero-large-text{
     color:#0A2540;
     font-weight: 500;
@@ -63,36 +71,7 @@ img.hero-image{
     font-weight: 500;
     font-size: 1.5rem;
 }
-
-/* CLASSIC */
-.header-classic{
-    font-family: "Brygada 1918", 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 3rem;
-}
-.header-classic-small{
-    font-size: 2rem;
-    font-family: "Brygada 1918", 'Times New Roman', Times, serif;
-    font-weight: 500;
-}
-.p-classic{
-    font-family: "Brygada 1918", 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 1.4rem;
-}
-.p-classic-small{
-    font-family: "Brygada 1918", 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-    color: #4b4b4b;
-    text-align: center;
-}
-.mini-hero .p-classic-small{
-    margin-top: 2vh;
-}
-
-
-
+/* Paragraph Styles */
 .paragraph1{
     color:#0d1012;
     font-weight: 350;
@@ -107,6 +86,7 @@ img.hero-image{
     text-align: center;
     margin: auto;
 }
+/* Use on Main Page */
 .paragraph3{
     font-weight: 300;
     color:#1b2128;
@@ -115,15 +95,8 @@ img.hero-image{
     max-width: 55ch;
     text-align: left;
 }
-.paragraph4{
-    font-weight: 500;
-    color:#1b2128;
-    font-size: 1.2rem;
-    line-height: 2;
-    max-width: 55ch;
-    text-align: center;
-    margin: auto;
-}
+
+/* Index Page Text Animation */
 .animate, .animate2{
     font-size: 2.5rem;
     font-weight: 500;
@@ -210,7 +183,6 @@ img#flint-logo-th{
 }
 
 /* ARTICLE */
-
 .article{
     display: flex;
     flex-direction: column;

@@ -13,16 +13,7 @@ header{
     display: flex;
     flex-direction: column;
 }
-/* Progress bar */
-.progress-bar{
-    --progress: 0;
-    height: 3px;
-    width: var(--progress);
-    background: black;
-    position: fixed;
-    z-index: 100;
-    border-radius: 0 4px 4px 0;
-}
+
 
 /* "Nathapongn" in the navigation bar */
 
