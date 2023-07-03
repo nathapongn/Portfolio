@@ -35,6 +35,13 @@ img.hero-image{
 .More{
     padding-top: 2vh;
     padding-bottom: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.More lord-icon{
+    rotate: 90deg;
 }
 /* Progress bar */
 .progress-bar{
