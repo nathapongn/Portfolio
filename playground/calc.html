@@ -9,145 +9,53 @@
     
 </head>
 <body>
-<div class="calculator">
-    <div class="display"></div>
-    <div class="controls">
-        <div class="numberPad">
-            <div class="buttonRow">
-                <button class="actionButton" id="buttonClear" title="clear" onclick="
-                reset();
-                ">C</button>
-                <button class="actionButton" id="buttonOpen" title="(" onclick="
-                calculation += `( `;
-                display();
-                ">(</button>
-                <button class="actionButton" id="buttonClose" title=")" onclick="
-                calculation += ` )`;
-                display();
-                ">)</button>
+    <div class="calculator">
+        <div class="display"></div>
+        <div class="controls">
+            <div class="numberPad">
+                <div class="buttonRow">
+                    <button class="actionButton" id="buttonClear">C</button>
+                    <button class="symbolButton" id="buttonOpen">(</button>
+                    <button class="symbolButton" id="buttonClose">)</button>
+                </div>
+                <div class="buttonRow">
+                    <button class="numberButton" id="button7">7</button>
+                    <button class="numberButton" id="button8">8</button>
+                    <button class="numberButton" id="9" title="9">9</button>
+                </div>
+    
+                <div class="buttonRow">
+                    <button class="numberButton"id="button4">4</button>
+                    <button class="numberButton" id="button5">5</button>
+                    <button class="numberButton" id="button6">6</button>
+                </div>
+    
+                <div class="buttonRow">
+                    <button class="numberButton" id="button1">1</button>
+                    <button class="numberButton" id="button2">2</button>
+                    <button class="numberButton" id="button3">3</button>
+                </div>
+                <div class="buttonRow">
+                    <button class="numberButton" id="button0">0</button>
+                    <button class="symbolButton" id="buttonDot">.</button>
+                </div>
             </div>
-            <div class="buttonRow">
-                <button id="button7" title="7" onclick="
-                calculation += '7';
-                display();
-                ">7</button>
-                <button id="button8" title="8" onclick=" 
-                calculation += '8';
-                display();
-                ">8</button>
-                <button id="9" title="9" onclick="
-                calculation += '9';
-                display();
-                ">9</button>
-            </div>
-
-            <div class="buttonRow">
-                <button id="button4" title="4" onclick=" 
-                calculation += '4';
-                display();  
-                ">4</button>
-                <button id="button5" title="5" onclick="
-                calculation += '5';
-                display();  
-                ">5</button>
-                <button id="button6" title="6" onclick=" 
-                calculation += '6';
-                display();
-                ">6</button>
-            </div>
-
-            <div class="buttonRow">
-                <button id="button1" title="1" onclick="
-                calculation += '1';
-                display();  
-                ">1</button>
-                <button id="button2" title="2" onclick="
-                calculation += '2';
-                display();  
-                ">2</button>
-                <button id="button3" title="3" onclick="
-                calculation += '3';
-                display();  
-                ">3</button>
-            </div>
-            <div class="buttonRow">
-                <button id="button0" title="0" onclick=
-                calculation += '0';
-                display();
-                ">0</button>
-                <button id="buttonDot" title="Dot" onclick="
-                calculation += '.';
-                display();
-                ">.</button>
-            </div>
-        </div>
-        
+            
             <div class="actionColumn">
 
-                <button class="actionButton" id="buttonMultiply" title="multiply" onclick="
-                calculation += ' * ';
-                display();
-                ">×</button>
+                <button class="multiplyButton" id="buttonMultiply">×</button>
         
-                <button class="actionButton" id="buttonDivision" title="divide" onclick="
-                calculation += ' / ';
-                display();
-                ">÷</button>
+                <button class="divideButton" id="buttonDivision">÷</button>
                 
-                <button class="actionButton" id="buttonAddition" title="add" onclick="
-                calculation += ' + ';
-                display();
-                ">+</button>
+                <button class="symbolButton" id="buttonAddition">+</button>
                     
-                <button class="actionButton" id="buttonSubtract" title="minus" onclick="
-                calculation += ' - ';
-                display();
-                ">-</button>
+                <button class="symbolButton" id="buttonSubtract">-</button>
         
-                <button id="buttonEqual" title="equal" onclick="
-                calculate()
-                ">=</button>   
+                <button class="equalButton">=</button>   
             </div>
-    
-    </div>
-</div>
-</body>
-
-<script>
-    let calculation = '';
-
-    function reset() {
-        calculation = '';
         
-        console.log(`Calculation Reset`);
-
-        let display = document.querySelector(".display");
-
-        display.innerHTML(' '); 
-
-    }
-
-    function display() {
-
-        console.log(calculation);
-
-        let display = document.querySelector(".display");
-
-        display.innerHTML(calculation); 
-
-    }
-
-    function calculate() {
-        eval(calculation);
-        console.log(eval(calculation));
-
-        // Once calculated, the calculated number stays calculated to allow simplified further calculation.
-        calculation = eval(calculation);
-
-        let display = document.querySelector(".display");
-
-        display.innerHTML(eval(calculation));
-    }
-</script>
-
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
 </html>

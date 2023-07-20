@@ -27,7 +27,7 @@ body{
     transition: 400ms;
     text-overflow: ellipsis;
 }
-.display, text {
+.display, text{
     padding-right: 0px;
 }
 .calculator{
@@ -71,26 +71,26 @@ button:active{
     transition: 400ms;
     scale: 1.1;
 }
-#buttonClear{
+#button0{
     flex: 2;
 }
-.button, #button0{
-    flex: 2;
-}
-
-/* Action Button */
-.actionButton{
+.symbolButton, .multiplyButton, .divideButton, .clearButton{
     font-size: 2rem;
     background-color: #afbecc;
     color: #1f2d3a;
 }
-.actionButton:hover{
+.symbolButton#buttonDot{
+    color: white;
+    background-color: #263646;
+
+}
+.symbolButton:hover{
     background-color: rgb(124, 142, 158)
 }
-#buttonEqual{
+.equalButton{
     background-color: #ff9100;
 }
-#buttonEqual:hover {
+.equalButton:hover {
     background-color: #e48100;
     color:#141d25;
 }
