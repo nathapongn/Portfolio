@@ -175,10 +175,8 @@ header{
     rotate: 90deg;
 }
 /* Playground Projects Thumbnail */
-.portfolio-block.calculator{
-    background-color: white;
-}
-.thumbnail-image.lmwn{
+.thumbnail-image.calculator{
+    padding: 5rem;
     background-color: #34495E;
 }
 
@@ -195,6 +193,7 @@ header{
 }
 /* Portfolio Block Styling */
 a.portfolio-block{
+    color: black;
     border: 2px solid #e6e6e6;
     background-color: white;
     display: flex;
