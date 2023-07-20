@@ -66,11 +66,11 @@ button{
     margin: 8px;
     transition: 400ms;
 }
-button:active{
+/* button:active{
     background-color: #141d25;
     transition: 400ms;
     scale: 1.1;
-}
+} */
 #button0{
     flex: 2;
 }
