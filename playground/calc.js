@@ -17,7 +17,7 @@ numberButton.forEach(
             display();
         });
     }
-)
+);
 // Addition, Subtraction
 const symbolButton = document.querySelectorAll('.symbolButton');
 symbolButton.forEach(function(button){
