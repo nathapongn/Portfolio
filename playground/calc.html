@@ -71,7 +71,7 @@
                 ">3</button>
             </div>
             <div class="buttonRow">
-                <button id="button0" title="0" onclick="
+                <button id="button0" title="0" onclick=
                 calculation += '0';
                 display();
                 ">0</button>
@@ -123,7 +123,7 @@
 
         let display = document.querySelector(".display");
 
-        display.setHTML(' '); 
+        display.innerHTML(' '); 
 
     }
 
@@ -133,7 +133,7 @@
 
         let display = document.querySelector(".display");
 
-        display.setHTML(calculation); 
+        display.innerHTML(calculation); 
 
     }
 
@@ -146,7 +146,7 @@
 
         let display = document.querySelector(".display");
 
-        display.setHTML(eval(calculation));
+        display.innerHTML(eval(calculation));
     }
 </script>
 
