@@ -19,12 +19,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="android-chrome" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
 
+
     <!-- Desktop Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
 
-    <!-- Poppins Font -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins: 200,300,500,600' rel='stylesheet'>
+    <!-- Poppins Font
+    <link href='https://fonts.googleapis.com/css?family=Poppins: 200,300,500,600' rel='stylesheet'> -->
 
+    <!-- Satoshi Font -->
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 
     <title>Nathapongn - About</title>
 </head>
@@ -33,22 +36,22 @@
         <!-- HEADER -->
         <div id="header" class="header blurred">
             <div class="header-content">
-                <!-- Nathapongn -->
                 <a id="site-title" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
-                <!-- Navigations -->
                 <div class="header-nav">
                     <nav>
-                        <!-- Hamburger Menu -->
+                        <!-- Normal Menu -->
+                        <ul class="navmenu">
+                            <li class="nav-menu"><a href="index.html">UX/UI</a></li>
+                            <li class="nav-menu"><a href="playground.html">Playground</a></li>
+                            <li class="nav-menu active-menu"><a href="about.html">About</a></li>
+                        </ul>
+                        <!-- Hamburger Icon -->
                         <div class="ham" alt="Menu" onclick="openmenu()">
                             <span class="bar"></span>
                             <span class="bar"></span>
                             <span class="bar"></span>
                         </div>
-                        <ul class="navmenu">
-                            <li><a href="index.html">UX/UI</a></li>
-                            <!-- <li class="nav-menu"><a href="arch.html">Architecture</a></li> -->
-                            <li class="nav-menu active-menu" ><a href="about.html">About</a></li>
-                        </ul>
+                        
                     </nav>
                 </div>
             </div>
@@ -56,34 +59,26 @@
     </header>
 
     <main>
-        <section id="duo-about" class="duo">
-            <img id="Me" class="duo-image" src="Asset-About/Me.jpg">
-            <div class="duotext">
-                <h1 class="header1">I'm <span class="animate"></span></h1>
-                <p class="about-text">based in Bangkok, Thailand
-                <br><br>
-                Currently a UX Designer at SCB - Siam Commercial Bank
-                working on various B2B digital banking products.
-                <br><br>
-                I love reading non-fiction books and listening to music on repeat.
-                <br><br>
-                Thank you for visiting my online portfolio!
-                </p>
+        <section class="topic" id="aboutMe">
+            <img class="topic-image" src="Asset-About/Me.jpg" alt="Photo of Me in Ninensaka, Kyoto">
+            <div class="topic-text">
+                <h1>I'm <span class="animate"></span></h1>
+                <p>Currently a UX Designer at SCB - Siam Commercial Bank working on various B2B digital banking products including, Corporate Banking, Enterprise Trade Solution, and Investment Portal. I love reading non-fiction books and listening to music on repeat. Thank you for visiting my online portfolio!</p>
             </div>
         </section>
         
     </main>
 
     <footer>
-        <div class="local-social">
-            <h4>Bangkok, Thailand</h4>
-            <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
-                <div class="linkedin">
-                    <img src="Asset-Home/Social-icon/Linkedin.svg" alt="Go To Linkedin">
-                </div>
-            </a>
+        <div class="footer-text">
+            <h3>Bangkok, Thailand</h3>
+            <h4>© Nathapong Nurae 2023. All rights reserved</h4>
         </div>
-        <h5>Nathapong Nurae 2022. All rights reserved</h5>
+        <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
+            <div class="linkedin">
+                <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
+            </div>
+        </a>
     </footer>
 
 <script src="script.js"></script>

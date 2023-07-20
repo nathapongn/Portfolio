@@ -19,15 +19,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="android-chrome" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
     
+    <!-- Satoshi Font -->
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 
-    <!-- Poppins Font -->
+    <!-- Poppins Font
     <link href='https://fonts.googleapis.com/css?family=Poppins: 200,300,500,600' rel='stylesheet'>
     <link rel="DNS-prefetch" href="//fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/> -->
 
     <!-- Desktop Stylesheet -->
     <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="style2.css"> 
 
     <title>Nathapongn - PORTFOLIO</title>
 </head>
@@ -36,22 +37,22 @@
     <!-- HEADER -->
     <div id="header" class="header blurred">
         <div class="header-content">
-            <!-- Nathapongn -->
             <a id="site-title" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
-            <!-- Navigations -->
             <div class="header-nav">
                 <nav>
-                    <!-- Hamburger Menu -->
+                    <!-- Normal Menu -->
+                    <ul class="navmenu">
+                        <li class="nav-menu active-menu"><a href="index.html">UX/UI</a></li>
+                        <li class="nav-menu"><a href="playground.html">Playground</a></li>
+                        <li class="nav-menu"><a href="about.html">About</a></li>
+                    </ul>
+                    <!-- Hamburger Icon -->
                     <div class="ham" alt="Menu" onclick="openmenu()">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
-                    <ul class="navmenu">
-                        <li class="nav-menu active-menu"><a href="#project">UX/UI</a></li>
-                        <!-- <li class="nav-menu"><a href="arch.html">Architecture</a></li> -->
-                        <li><a href="about.html">About</a></li>
-                    </ul>
+                    
                 </nav>
             </div>
         </div>
@@ -64,9 +65,8 @@
 
         <div class="hero">
             <div class="hero-text">
-                <h1 class="hero-large-text" id="Hello"><span class="animate2"></span></h1>
-                <p class="paragraph3" id="who">My name is Nat, I'm a UX Designer based in Bangkok, Thailand.</p> 
-                <p class="paragraph3"id="currently">Currently designing at SCB (Siam Commercial Bank), here to make banking less boring.</p>
+                <h1><span class="animate2"></span></h1>
+                <h3 id="who">My name is Nat, I'm a UX Designer based in Bangkok. Currently designing at<br> SCB - Siam Commercial Bank, here to make B2B banking less boring.</h3> 
             </div>
         </div>
 
@@ -109,8 +109,8 @@
                 <!-- Title / Description / Read More Button -->
                 <div class="portfolio-text">
                     <div class="portfolio-description">
-                        <h1 class="portfolio-title">Flint</h1>
-                        <p class="portfolio-subtitle">Simplified Stock Investing for Thais</p>    
+                        <h1>Flint</h1>
+                        <p>Simplified Stock Investing for Thais</p>    
                     </div>
                     <div class="explore-button-icon">
                         <button class="explore">Read More</button>
@@ -137,8 +137,8 @@
                 <!-- Title / Description / Read More Button -->
                 <div class="portfolio-text">
                     <div class="portfolio-description">
-                            <h1 class="portfolio-title">LINE MAN Wongnai</h1>
-                            <p class="portfolio-subtitle">UX/UI Design Internship</p>    
+                            <h1>LINE MAN Wongnai</h1>
+                            <p>UX/UI Design Internship</p>    
                     </div>
                     <div class="explore-button-icon">
                         <button class="explore">Read More</button>
@@ -147,25 +147,20 @@
                 </div>
             </a>
         </div>            
-        
-
-
-        
-
 </main>
 
 <!-- ---------------FOOTER----------------- -->
 
 <footer>
-    <div class="local-social">
-        <h4>Bangkok, Thailand</h4>
-        <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
-            <div class="linkedin">
-                <img src="Asset-Home/Social-icon/Linkedin.svg" alt="Go To Linkedin">
-            </div>
-        </a>
+    <div class="footer-text">
+        <h3>Bangkok, Thailand</h3>
+        <h4>© Nathapong Nurae 2023. All rights reserved</h4>
     </div>
-    <h5>Nathapong Nurae 2022. All rights reserved</h5>
+    <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
+        <div class="linkedin">
+            <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
+        </div>
+    </a>
 </footer>
 
 
