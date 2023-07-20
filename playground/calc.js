@@ -2,7 +2,7 @@ let calculation = '';
 
 function display() {
     let display = document.querySelector('.display');
-    display.innerHTML = calculation;
+    display.innerHTML = calculation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 const numberButton = document.querySelectorAll('.numberButton');

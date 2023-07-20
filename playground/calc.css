@@ -64,13 +64,13 @@ button{
     color: white;
     background-color: #263646;
     margin: 8px;
-    transition: 400ms;
+    transition: 300ms;
 }
-/* button:active{
+button:active{
     background-color: #141d25;
-    transition: 400ms;
+    transition: 300ms;
     scale: 1.1;
-} */
+}
 #button0{
     flex: 2;
 }
@@ -101,8 +101,8 @@ button{
         overflow: hidden;
     }
     button{
-        width: 64px;
-        height: 64px;
+        width: 72px;
+        height: 72px;
         font-size: 1.5rem;
     }
     .actionButton{
