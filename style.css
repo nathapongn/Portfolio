@@ -179,6 +179,11 @@ header{
     padding: 5rem;
     background-color: #34495E;
 }
+.thumbnail-image.rps{
+    padding: 5rem;
+    object-fit: cover;
+    background-color: #E8EBF0
+}
 
 /* Portfolio Projects Thumbnail*/
 
@@ -861,6 +866,14 @@ footer img:hover{
     }
     .article-image{
         max-width: 80%;
+    }
+    /* Playground project thumbnail */
+    .thumbnail-image.calculator{
+        padding: 2rem;
+    }
+    .thumbnail-image.rps{
+        object-fit: contain;
+        padding: 0.5rem;
     }
 }
 @media (max-width: 1000px){
