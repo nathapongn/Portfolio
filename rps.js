@@ -37,7 +37,7 @@ pickButton.forEach(function(pickButton) {
     // Computer Picked Paper
     else if (random <= 2/3 && random > 1/3) {
         computerPick = 'Computer picked Paper.';
-        console.log('Computer picked Paper');
+        console.log(computerPick);
         if (userPick.includes('Scissors')){
             console.log('You Win!')
             result = 'You Win!';
@@ -53,11 +53,11 @@ pickButton.forEach(function(pickButton) {
     }
     // Computer Picked Scissors
     else {
-        computerPick = 'Computer picked Scissors';
-        console.log('Computer picked Scissors');
+        computerPick = 'Computer picked Scissors.';
+        console.log(computerPick);
         if (userPick.includes('Paper')){
-            console.log('You Win!');
-            result = 'You Win!';
+            console.log('You Lose');
+            result = 'You Lose';
         }
         else if (userPick.includes('Scissors')){
             console.log(`It's a Tie!`);
