@@ -555,11 +555,11 @@ img.project-image.lmwn{
     --progress: 0;
     height: 4px;
     width: var(--progress);
-    background: linear-gradient(90deg, rgba(71,118,230,1) 0%, rgba(142,84,233,1) 50%, rgba(255,0,153,1) 100%);
+    /* background: linear-gradient(90deg, rgba(71,118,230,1) 0%, rgba(142,84,233,1) 50%, rgba(255,0,153,1) 100%); */
+    background-color: var(--color-accent);
     position: fixed;
     top: 0;
     z-index: 100;
-    border-radius: 0 4px 4px 0;
 }
 
 /* Topic section contains an image pair with a body of texts. It can be flipped by adding "flip" to the class name*/
