@@ -87,3 +87,97 @@
                 </div>
             </section>
         </section>
+
+
+        .topic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: var(--body-padding);
+    background-color: red;
+}
+.topic h1{
+    color: var(--color-primary);
+    font-size: var(--font-title);
+    margin-bottom: 2rem;
+}
+.topic p{
+    color: var(--color-secondary);
+    font-size: var(--font-bodyS);
+    line-height: var(--line-height-S);
+}
+.topic img{
+    width: 100%;
+    max-width: fit-content;
+    border-radius: 4px;
+    flex: 1;
+}
+.topic-text{
+    width: 100%;
+    max-width: 55ch;
+    flex: 1;
+}
+.topic.ds{
+    text-align: justify;
+}
+.topic-text.ds{
+    max-width: 55ch;
+}
+.topic.flip{
+    flex-direction: row-reverse;
+}
+.topic.video video{
+    width: 42%;
+}
+
+/* BOX */
+/* Informative Design & Hover Animation */
+
+.box-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.box-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    position: relative;
+}
+.box-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 40ch;
+}
+.box-image img{
+    max-width: 80%;
+    padding: 16px;
+}
+.box-wrapper > .box-image:hover > .box-hover{
+    opacity: 100%;
+    scale: 1.35;
+    transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.box-hover{
+    position: absolute;
+    width: 58%;
+    top: 21.2%;
+    transition: 400ms;
+
+}
+.box-hover.bottom-sheet{
+    transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: absolute;
+    width: 62%;
+    top: 14%;
+}

@@ -32,7 +32,8 @@
     <title>Nathapongn - About</title>
 </head>
 <body>
-    <header>
+
+    <main>
         <!-- HEADER -->
         <div id="header" class="header blurred">
             <div class="header-content">
@@ -41,7 +42,7 @@
                     <nav>
                         <!-- Normal Menu -->
                         <ul class="navmenu">
-                            <li class="nav-menu"><a href="index.html">UX/UI</a></li>
+                            <li class="nav-menu"><a href="index.html">Works</a></li>
                             <li class="nav-menu"><a href="playground.html">Playground</a></li>
                             <li class="nav-menu active-menu"><a href="about.html">About</a></li>
                         </ul>
@@ -56,28 +57,28 @@
                 </div>
             </div>
         </div>
-    </header>
 
-    <main>
-        <section class="topic" id="aboutMe">
-            <img class="topic-image" src="Asset-About/Me.jpg" alt="Photo of Me in Ninensaka, Kyoto">
-            <div class="topic-text">
-                <h1 class="animate2">I'm <span class="animate"></span></h1>
-                <p>Currently a UX Designer at SCB - Siam Commercial Bank working on various B2B digital banking products including, Corporate Banking, Enterprise Trade Solution, and Investment Portal. I love reading non-fiction books and listening to music on repeat. Thank you for visiting my online portfolio!</p>
+        <div class="topic about">
+            <div class="topicImage">
+                <img src="Asset-About/Me.jpg" alt="Photo of Me in Tokyo">
             </div>
-        </section>
+            <div class="topicText">
+                <h1 class="animateText">I'm <span class="animate"></span></h1>
+                <p>Currently a UX Designer at SCB - Siam Commercial Bank working on various B2B digital banking products including, Corporate Banking, Enterprise Trade Solution, and Investment Portal. I love reading non-fiction books and listening to music on repeat. Thank you for visiting my online portfolio!
+                </p>
+            </div>
+        </div>
+
         
     </main>
 
     <footer>
         <div class="footer-text">
-            <h3>Bangkok, Thailand</h3>
-            <h4>© Nathapong Nurae 2023. All rights reserved</h4>
+            <p>Bangkok, Thailand</p>
+            <p>© Nathapong Nurae 2023. All rights reserved</p>
         </div>
         <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
-            <div class="linkedin">
-                <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
-            </div>
+            <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
         </a>
     </footer>
 
@@ -94,18 +95,5 @@
 
 </script>
 
-<script>
-    const header = document.getElementById('header'); 
-let scrolled = false;
-
-window.onscroll = function() {
-if(window.pageYOffset > 100) {
-    header.classList.remove('blurred');
-} else {
-    header.classList.add('blurred');
-}
-}
-</script>
-</script>
 </body>
 </html>

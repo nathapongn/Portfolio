@@ -33,16 +33,17 @@
     <title>Nathapongn - PORTFOLIO</title>
 </head>
 <body>
-<header>
+    
+<main>
     <!-- HEADER -->
-    <div id="header" class="header blurred">
+    <div class="header">
         <div class="header-content">
             <a id="site-title" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
             <div class="header-nav">
                 <nav>
                     <!-- Normal Menu -->
                     <ul class="navmenu">
-                        <li class="nav-menu active-menu"><a href="index.html">UX/UI</a></li>
+                        <li class="nav-menu active-menu"><a href="index.html">Works</a></li>
                         <li class="nav-menu"><a href="playground.html">Playground</a></li>
                         <li class="nav-menu"><a href="about.html">About</a></li>
                     </ul>
@@ -57,138 +58,122 @@
             </div>
         </div>
     </div>
-</header>
+    <div class="intro">
+        <h1><span class="animateText"></span></h1>
+        <p>My name is Nat, I'm a UX Designer based in Bangkok. Currently designing at SCB - Siam Commercial Bank, here to make B2B banking less boring.</p> 
+    </div>
 
+    <div class="more">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/zmkotitn.json"
+            trigger="loop"
+            delay="400"
+            colors="primary:#121331"
+            style="width:40px;height:40px">
+        </lord-icon>
+    </div>
 
-<main>
-        <!-- HERO BANNER -->
-
-        <div class="hero">
-            <div class="hero-text">
-                <h1><span class="animate2"></span></h1>
-                <h3 id="who">My name is Nat, I'm a UX Designer based in Bangkok. Currently designing at<br> SCB - Siam Commercial Bank, here to make B2B banking less boring.</h3> 
+    <div class="portfolio">
+        <a href="invest.html" class="project invest">    
+            <div class="project-image invest">
+                <!-- Overlay div when hover -->
+                <!-- <div class="project-overlay invest">
+                    <img src="Asset-UXUI/invest/phoneLast.svg" alt="Flint Explore Page">
+                    <img src="Asset-UXUI/invest/phoneMid.svg" alt="Flint Home Page">
+                    <img src="Asset-UXUI/invest/cardFront.svg" alt="Flint Cash Cards">
+                </div> -->
+                <!-- Actual thumbnail -->
+                <img src="Asset-UXUI/invest/thumb.png" alt="" class="thumbnail-image invest">
             </div>
-        </div>
 
-        <div class="More">
-            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-            <lord-icon
-                src="https://cdn.lordicon.com/zmkotitn.json"
-                trigger="loop"
-                delay="400"
-                colors="primary:#121331"
-                style="width:40px;height:40px">
-            </lord-icon>
-        </div>
-
-        <!-- PORTFOLIO PROJECT -->
-
-        <div class="portfolio-project" id="project">
-
-            <a href="flint.html" class="portfolio-block flint">
-                
-                <div class="portfolio-thumbnail flint">
-                    <!-- Thumbnail overlay when hover -->
-                    <div class="thumbnail-overlay flint">
-
-                        <!-- Stock Bubble -->
-                        <div class="bubble-overlay">
-                            <img src="Asset-UXUI/Asset-Flint/SET-Bubble.svg" alt="" class="stock-bubble" id="SET">
-                            <img src="Asset-UXUI/Asset-Flint/NYSE-Bubble.svg" alt="" class="stock-bubble" id="NYSE">
-                            <img src="Asset-UXUI/Asset-Flint/NASDAQ-Bubble.svg" alt="" class="stock-bubble" id="NASDAQ">
-                        </div>
-
-                        <!-- Hand Animate -->
-                        <img src="Asset-UXUI/Asset-Flint/Portfolio-Thumbnail-Hand.svg" alt="" id="flint-hover-hand">
-                    </div>
-
-                    <!-- Actual Thumbnail -->
-                    <img src="Asset-UXUI/Asset-Flint/Flint-Portfolio-Thumbnail.png" alt="" class="thumbnail-image flint">
+            <!-- Title / Description / Read More Button -->
+            <div class="project-text">
+                <div>
+                    <h1>Flint</h1>
+                    <p>Stocks Investing Made Easy</p>    
                 </div>
-
-                <!-- Title / Description / Read More Button -->
-                <div class="portfolio-text">
-                    <div class="portfolio-description">
-                        <h1>Flint</h1>
-                        <p>Simplified Stock Investing for Thais</p>    
-                    </div>
-                    <div class="explore-button-icon">
-                        <button class="explore">Read More</button>
-                        <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
-                    </div>
+                <div class="explore-button-icon">
+                    <button class="explore">View Project</button>
+                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="View Project">
                 </div>
-            </a>
+            </div>
+        </a>
+
+        <a href="grow.html" class="project grow">    
+            <div class="project-image grow">
+                <!-- Overlay div when hover -->
+                <div class="project-overlay grow">
+                    <img src="Asset-UXUI/grow/thumbBack.png" alt="Grow 2 Zero Cover">
+                    <img src="Asset-UXUI/grow/thumbFront.png" alt="Grow 2 Zero Cover">
+                </div>
+                <!-- Actual thumbnail -->
+                <img class="thumbnail-image grow" src="Asset-UXUI/grow/thumb.png" alt="">
+            </div>
+
+            <!-- Title / Description / Read More Button -->
+            <div class="project-text">
+                <div>
+                    <h1>Grow 2 Zero</h1>
+                    <p>Landing Page Commission</p>    
+                </div>
+                <div class="explore-button-icon">
+                    <button class="explore">View Project</button>
+                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="View Project">
+                </div>
+            </div>
+        </a>
+
+        <a href="lmwn.html" class="project lmwn">
             
-
-            <!-- LMWN -->
-
-            <a href="lmwn.html" class="portfolio-block lmwn">
-                
-                <div class="portfolio-thumbnail lmwn">
-                    <!-- Thumbnail overlay when hover  -->
-                    <div class="thumbnail-overlay lmwn">
-                        <img class="lm" src="Icons/LM.svg" alt="">
-                        <img class="wn" src="Icons/WN.svg" alt="">
-                    </div>
-                    <!-- Actual Thumbnail -->
-                    <img src="Asset-UXUI/Asset-LMWN/LMWN-Portfolio-Thumbnail.svg" alt="" class="thumbnail-image lmwn">
+            <div class="project-image lmwn">
+                <!-- Overlay div when hover -->
+                <div class="project-overlay lmwn">
+                    <img class="lm" src="Icons/LM.svg" alt="">
+                    <img class="wn" src="Icons/WN.svg" alt="">
                 </div>
+                <!-- Actual Thumbnail -->
+                <img class="thumbnail-image lmwn" src="Asset-UXUI/lmwn/LMWN-Portfolio-Thumbnail2.svg" alt="" >
+            </div>
 
-                <!-- Title / Description / Read More Button -->
-                <div class="portfolio-text">
-                    <div class="portfolio-description">
-                            <h1>LINE MAN Wongnai</h1>
-                            <p>UX/UI Design Internship</p>    
-                    </div>
-                    <div class="explore-button-icon">
-                        <button class="explore">Read More</button>
-                        <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
-                    </div>
+            <div class="project-text">
+                <div>
+                        <h1>LINE MAN Wongnai</h1>
+                        <p>UX Design Internship</p>    
                 </div>
-            </a>
-        </div>            
+                <div class="explore-button-icon">
+                    <button class="explore">View Article</button>
+                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="View Project">
+                </div>
+            </div>
+        </a>
+    </div>            
 </main>
 
 <!-- ---------------FOOTER----------------- -->
 
 <footer>
     <div class="footer-text">
-        <h3>Bangkok, Thailand</h3>
-        <h4>© Nathapong Nurae 2023. All rights reserved</h4>
+        <p>Bangkok, Thailand</p>
+        <p>© Nathapong Nurae 2023. All rights reserved</p>
     </div>
     <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
-        <div class="linkedin">
-            <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
-        </div>
+        <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
     </a>
 </footer>
 
-
 <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-
 <script src="script.js"></script>
-
 <script src="typed.js"></script>
 
 <script>
-    var typed = new Typed (".animate2", {
+
+    var typed = new Typed (".animateText", {
         strings: ["Hello!", "Glad to see you!"],
         typeSpeed: 50,
         backSpeed: 50,
         loop: true
     });
-
-    const header = document.getElementById('header'); 
-    let scrolled = false;
-    
-    window.onscroll = function() {
-    if(window.pageYOffset > 100) {
-        header.classList.remove('blurred');
-    } else {
-        header.classList.add('blurred');
-    }
-    }
-    </script>
     
 </script>
 
