@@ -59,6 +59,8 @@
     cursor: pointer;
     text-decoration: none;
     transition: 100ms;
+    font-size: 1rem;
+    font-weight: var(--font-weight-M);
 }
 #returnHome:hover{
     background-color: #1548CC;
