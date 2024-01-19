@@ -599,14 +599,12 @@ img.project-image.lmwn{
 }
 .topicImage img{
     width: 100%;
-    min-width: 320px;
     max-width: 600px;
     border-radius: 6px;
 }
 .topicVideo video{
 
     width: 100%;
-    min-width: 450px;
     max-width: 600px;
 }
 /* Custom Styling for About Page to fill the whole vh */
@@ -891,12 +889,14 @@ img#lmwn{
     .heroBanner.invest img{
         object-fit: fill;
     }
-
-
     /* Wrap portfolio projects into column */
     .project{
         flex-basis: 100%;
         max-width: none;
+    }
+    /* Better wrapping of topic section */
+    .topic{
+        flex-direction: column;
     }
 
 }
@@ -909,6 +909,12 @@ img#lmwn{
     .projectIntro.invest img{
         max-width: 120px;
     }
+    /* Add padding to alert on smaller screen */
+    #alert img{
+        padding: 2.5rem;
+    }
+
+
 }
 /* Mobile */
 @media (max-width: 800px){
