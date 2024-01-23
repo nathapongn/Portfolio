@@ -36,35 +36,39 @@
 }
 
 /* Under Construction Page */
-.underConstruction{
+.thankYou{
     width: 100%;
-    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: var(--body-padding);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.75rem;
+    gap: 1rem;
 }
-.underConstruction h1{
+.thankYou h1{
     font-size: 3rem;
 }
-.underConstruction p{
+.thankYou p{
     font-size: var(--font-bodyS);
 }
 #returnHome{
     color: white;
-    background-color: #3265E9;
+    background-color: #000000;
     padding: 0.75rem;
     border-radius: 6px;
     cursor: pointer;
     text-decoration: none;
     transition: 100ms;
     font-size: 1rem;
-    font-weight: var(--font-weight-M);
+    font-weight: 400;
+    margin: 2rem;
 }
 #returnHome:hover{
-    background-color: #1548CC;
-    transition: 100ms;
+    scale: 1.05;
+    background-color: #161616;
+    transition: 300ms;
 }
 
 /* Top Navigation Menu */
@@ -407,19 +411,24 @@ button{
     transition: 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
-/* Flint Inner Project */
+/* Hero Banner styling */
 
-.heroBanner.invest{
+.heroBanner{
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: 90vh;
 }
-.heroBanner.invest img{
+.heroBanner img{
     object-fit: cover;
     width: 100%;
 }
+/* Hero Banner Custom styling */
+.heroBanner.grow{
+    background-color: #00705E;
+}
+
 /* Project Intro Banner and Texts*/
 
 .projectIntro{
@@ -432,23 +441,33 @@ button{
     align-items: flex-start;
     padding: var(--content-padding);
     text-align: center;
-
+    margin-top: 10vh;
 }
 .projectIntro img{
     z-index: 2;
-    width: 100%;
-    max-width: 140px;
+    max-width: 160px;
 }
-.projectIntro.invest img{
-    max-width: 180px;
-}
-.projectIntro.invest p{
+.projectIntro p{
     z-index: 2;
-    color: white;
     font-size: var(--font-bodyM);
     line-height: var(--line-height-S);
     max-width: 70ch;
 }
+/* Flint Styling */
+.projectIntro.invest img{
+    max-width: 160px;
+}
+.projectIntro.invest p{
+    color: white;
+}
+/* G2Z Styling */
+.projectIntro.grow{
+    color: white;
+}
+.projectIntro.grow img{
+    max-width: 300px;
+}
+
 /* Project Overview */
 .projectOverview{
     padding: var(--content-padding);
@@ -556,29 +575,38 @@ img.project-image.lmwn{
     height: 4px;
     width: var(--progress);
     /* background: linear-gradient(90deg, rgba(71,118,230,1) 0%, rgba(142,84,233,1) 50%, rgba(255,0,153,1) 100%); */
-    background-color: var(--color-accent);
+    background-color: black;
     position: fixed;
     top: 0;
     z-index: 100;
 }
 
-/* Topic section contains an image pair with a body of texts. It can be flipped by adding "flip" to the class name*/
 
 /* Tag is a colorful chip above each section with relevant keywords */
 .tag{
     font-size: 1rem;
     font-weight: var(--font-weight-L);
-    color: var(--color-accent);
-    background-color: var(--color--accent--background);
     display: flex;
     padding: 8px;
     width: fit-content;
     border-radius: 4px;
 }
+/* Custom Tag Colors */
+.tag.invest{
+    color: var(--color-accent);
+    background-color: var(--color--accent--background);
+}
 .tag.lmwn{
     color: rgb(17, 102, 68);
     background: #cbf1e2;
 }
+.tag.grow{
+    color: rgb(17, 102, 68);
+    background: #cbf1e2;
+}
+
+/* Topic section contains an image pair with a body of texts. It can be flipped by adding "flip" to the class name*/
+
 .topic{
     display: flex;
     justify-content: center;
@@ -658,7 +686,12 @@ img.project-image.lmwn{
     width: 44px;
     height: 6px;
     border-radius: 4px;
+}
+.accent.invest{
     background-color: var(--color-accent);
+}
+.accent.grow{
+    background-color: #058F79;
 }
 /* Section text divides sections with centralized text and description */
 
@@ -735,13 +768,20 @@ img.project-image.lmwn{
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    opacity: 70%;
+    gap: 1rem;
 }
 .pair img{
+    opacity: 70%;
     flex-basis: 50%;
-    min-width: 450px;
+    min-width: 400px;
     max-width: 750px;
 }
+.pair video{
+    flex-basis: 50%;
+    min-width: 400px;
+    max-width: 700px;
+}
+
 
 /* Project Banner */
 .banner{
@@ -757,13 +797,6 @@ img.project-image.lmwn{
     gap: 3rem;
     padding: 4rem 2rem 4rem 2rem;
 }
-.projectIntro img{
-    max-width: 100px;
-}
-.projectIntro.invest {
-    margin-top: 10vh;
-}
-
 img#lmwn{
     padding: 3rem;
 }
@@ -774,10 +807,6 @@ img#lmwn{
 }
 .gallery img:not(:first-child) {
     flex-basis: 100%;
-}
-/* section text styling */
-.sectionText{
-    padding: var(--bodyMobile-padding);
 }
 
 /* Wide screen center the projects in the center */
@@ -808,6 +837,12 @@ img#lmwn{
     /* Common Layout */
     .topicImage{
         max-width: 600px;
+    }
+    .projectIntro img{
+        max-width: 120px;
+    }
+    .projectIntro.invest img{
+        max-width: 120px;
     }
 
 
@@ -882,11 +917,11 @@ img#lmwn{
         flex-direction: column;
         padding-bottom: 5vh;
     }
-    .heroBanner.invest{
+    .heroBanner{
         height: auto;
         align-items: center;
     }
-    .heroBanner.invest img{
+    .heroBanner img{
         object-fit: fill;
     }
     /* Wrap portfolio projects into column */
@@ -905,9 +940,6 @@ img#lmwn{
         height: 100%;
         max-height: 80vh;
         align-items: flex-start;
-    }
-    .projectIntro.invest img{
-        max-width: 120px;
     }
     /* Add padding to alert on smaller screen */
     #alert img{
@@ -935,9 +967,6 @@ img#lmwn{
     }
     .projectIntro img{
         max-width: 100px;
-    }
-    .projectIntro.invest {
-        margin-top: 10vh;
     }
     img#lmwn{
         padding: 3rem;
@@ -967,9 +996,6 @@ img#lmwn{
     
 
 @media (max-width: 600px){
-    .heroBanner{
-        max-height: 45vh;
-    }
     /* gallery */
     .gallery img{
     max-width: 100%;

@@ -58,20 +58,100 @@
             </div>
         </div>
     </div>
+    <div class="progress-bar grow"></div>
 
-    <div class="underConstruction">
-        <h1>Oops!</h1>
-        <p>Sorry, this page is still under construction. 
+
+
+    <div class="heroBanner grow">
+        <div class="projectIntro grow">
+            <img src="Asset-UX/grow/logo.svg" alt="Grow 2 Zero">
+            <p>Landing Page Design</p>
+        </div>
+        <picture>
+            <source
+            srcset="Asset-UX/grow/Banner_Mobile.png"
+            media="(max-width: 900px)" 
+            >
+            <img src="Asset-UX/grow/Banner_Web.png">
+        </picture>
+    </div>
+
+    <div class="topic" id="context">
+        <div class="topicText">
+            <h1>About</h1>
+            <p>Grow 2 Zero is a carbon trading site that seeks to make carbon trading accessible, transparent, and traceable. I have been tasked with designing a landing page for the project with a unique request: images are to be hand-drawn to portray a friendlier and less formal appearance, setting it apart from the typical carbon trading landing pages.</p>
+        </div>
+    </div>
+
+    <div class="sectionText">
+        <div class="accent grow"></div>
+        <h1>Illustration</h1>
+        <p>After sketching ideas on paper, I drew up each of the illustration digitally.
         </p>
+    </div>
+    <div class="pair">
+        <video src="Asset-UX/grow/drawing.mp4" type="video/mp4" autoplay="autoplay" loop="loop" muted defaultMuted playsinline></video>
+        <video src="Asset-UX/grow/drawing2.mp4" type="video/mp4" autoplay="autoplay" loop="loop" muted defaultMuted playsinline></video>
+    </div>
+
+    <div class="sectionText">
+        <div class="accent grow"></div>
+        <h1>Design</h1>
+    </div>
+
+    <div class="showcase">
+        <img src="Asset-UX/grow/landing.png" alt="Landing Page">
+        <img src="Asset-UX/grow/responsive.png" alt="Responsive Design">
+    </div>
+
+    <div class="sectionText">
+        <div class="accent grow"></div>
+        <h1>UI Kit</h1>
+        <p>Sent as a part of deliverables to the client.
+        </p>
+    </div>
+    <div class="showcase">
+        <img src="Asset-UX/grow/typography.png" alt="Grow 2 Zero UI Kit">
+        <img src="Asset-UX/grow/color.png" alt="Grow 2 Zero UI Kit">
+        <img src="Asset-UX/grow/layout.png" alt="Grow 2 Zero UI Kit">
+        <img src="Asset-UX/grow/button.png" alt="Grow 2 Zero UI Kit">
+        <img src="Asset-UX/grow/nav.png" alt="Grow 2 Zero UI Kit">
+    </div>
+
+    <div class="thankYou">
+        <h1>Fin</h1>
+        <p>Thank You for visiting my portfolio!</p>
         <a id="returnHome" href="index.html">Return Home</a>
     </div>
-    
+
+    <!-- ---------------FOOTER----------------- -->
+
+    <footer>
+        <div class="footer-text">
+            <p>Bangkok, Thailand</p>
+            <p>© Nathapong Nurae 2023. All rights reserved</p>
+        </div>
+        <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
+            <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
+        </a>
+    </footer>
+
 </main>
 
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <script src="script.js"></script>
+    <script src="typed.js"></script>
+    <script>
+        // progress bar
+        function updateProgressBar(){
+        const {scrollTop, scrollHeight} = document.documentElement;
+        const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100 + '%';
+        console.log(scrollPercent);
+        document.querySelector('.progress-bar').style.setProperty('--progress', scrollPercent);
+        }
 
-<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-<script src="script.js"></script>
-<script src="typed.js"></script>
+        document.addEventListener('scroll', updateProgressBar)
+    </script>
 
 </body>
 </html>
