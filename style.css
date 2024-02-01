@@ -985,8 +985,9 @@ img#lmwn{
     .project-overlay.invest img{
         scale: 1.0;
     }
-    .gallery img:not(:first-child) {
-        flex-basis: 100%;
+    /* gallery */
+    #showcase img:not(:first-child) {
+        min-width: 100%;
     }
     /* section text styling */
     .sectionText{
