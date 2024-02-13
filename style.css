@@ -175,16 +175,15 @@
     padding: var(--body-padding);
     gap: 3rem;
 }
-.intro img{
-    width: 100%;
-    max-width: 360px;
-}
 .introText{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    flex-basis: 50%;
 }
-
+.intro img{
+    max-width: 400px;
+}
 .intro h1{
     font-size: var(--font-intro);
     font-weight: var(--font-weight-L);
@@ -196,7 +195,6 @@
     color: var(--color-secondary);
     line-height: var(--line-height-S);
     max-width: 50ch;
-    min-width: 20ch;
 }
 .intro.playground{
     gap: 1rem;
@@ -932,6 +930,16 @@ img#lmwn{
     /* Main Page Banner */
     .intro{
         padding-bottom: 5vh;
+    }
+    .introText{
+        flex-basis: 100%;
+    }
+    .introText p{
+        max-width: 100ch;
+    }
+    .intro img{
+        width: 100%;
+        max-width: 500px;
     }
     .heroBanner{
         height: auto;
