@@ -72,7 +72,11 @@
 }
 
 /* Top Navigation Menu */
-#site-title{
+#siteLogo{
+    max-width: 2.5rem;
+    height: auto;
+}
+#siteTitle{
     text-decoration: none;
     font-size: 1.75rem;
     font-weight: 500;
@@ -82,7 +86,7 @@
     padding: 8px;
     transition: 400ms;
 }
-#site-title:hover{
+#siteTitle:hover{
     transition: 400ms;
     opacity: 70%;
 }
@@ -109,6 +113,11 @@
     align-items: center;
     justify-content: space-between;
 }
+#logoWrapper{
+    display: flex;
+    gap: 0.25rem;
+}
+
 .header-nav nav ul{
     display: flex;
     flex-direction: row;
