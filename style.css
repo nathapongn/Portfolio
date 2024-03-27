@@ -109,7 +109,6 @@
     display: flex;
     width: 100%;
     box-sizing: border-box;
-    justify-content: flex-start;
     align-items: center;
     justify-content: space-between;
 }
@@ -593,7 +592,6 @@ img.project-image.lmwn{
     --progress: 0;
     height: 4px;
     width: var(--progress);
-    /* background: linear-gradient(90deg, rgba(71,118,230,1) 0%, rgba(142,84,233,1) 50%, rgba(255,0,153,1) 100%); */
     background-color: black;
     position: fixed;
     top: 0;
@@ -649,8 +647,15 @@ img.project-image.lmwn{
     max-width: 600px;
     border-radius: 6px;
 }
-.topicVideo video{
 
+/* About Me Page */
+
+.topicImage #myPhoto{
+    filter: grayscale(100%);
+    padding: 2rem;
+}
+
+.topicVideo video{
     width: 100%;
     max-width: 600px;
 }
@@ -939,7 +944,7 @@ img#lmwn{
     }
     .intro img{
         width: 100%;
-        max-width: 500px;
+        max-width: 300px;
     }
     .heroBanner{
         height: auto;
@@ -968,8 +973,7 @@ img#lmwn{
     /* Add padding to alert on smaller screen */
     #alert img{
         padding: 2.5rem;
-    }
-
+    }  
 
 }
 /* Mobile */
@@ -1016,7 +1020,10 @@ img#lmwn{
     img.thumbnail-image{
         width: 120%;
     }
-    /* Topic Styling */
+    /* Remove padding on myPhoto on smaller screen */
+    .topicImage #myPhoto{
+        padding: 0px;
+    }  
 }
     
 
