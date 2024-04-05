@@ -32,7 +32,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Satoshi', 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: 'Satoshi', Arial, Helvetica, sans-serif;
 }
 
 /* Under Construction Page */
@@ -326,29 +326,10 @@ a.project:visited{
     color: var(--color-accent);
     font-weight: 600;
 }
-
 .project-image.invest{
     align-items: flex-end;
 }
 
-/* Calculator thumbnails */
-.project-image.calculator{
-    background: #34495e;
-    width: 100%;
-}
-.project-image.calculator img{
-    padding: 4rem;
-    width: auto;
-    height: 100%;
-}
-
-.project-image.rps{
-    background: rgb(238, 238, 238);
-}
-.project-image.rps img{
-    width: 100%;
-    height: auto;
-}
 /* Portfolio Animated Arrow Explore */
 .explore{
     color: var(--color-accent);

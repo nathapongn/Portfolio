@@ -1,0 +1,256 @@
+/* Global styles */
+* {
+    /* Setting up universal font family and box-sizing */
+    font-family: 'Satoshi', Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* Color variables */
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(49, 49, 49);
+    --tertiary-color: rgb(102, 102, 102);
+    --divider: rgb(223, 223, 223);
+    --accent-color: #2C64E3;
+    --accent-color-hover: #1341AB;
+}
+
+/* Main container */
+main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 80vh;
+}
+
+/* Date Section */
+.dateSection {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Current Date styles */
+.currentDate {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.currentMonth {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+/* Action Bar */
+.actionBar {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Input Field */
+.inputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.inputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-basis: 100%;
+}
+
+label {
+    color: var(--secondary-color);
+}
+
+input {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    height: 44px;
+    outline: none;
+    border: none;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--divider);
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+}
+
+input:focus {
+    border-bottom: 2px solid #457af5;
+}
+
+.inputName,
+.inputDate {
+    width: 100%;
+}
+
+.inputColor {
+    max-width: 44px;
+    padding: 8px;
+}
+
+.inputWrapper.color {
+    max-width: 44px;
+}
+
+/* Button styles */
+button {
+    cursor: pointer;
+}
+
+.buttonAdd {
+    min-width: 100px;
+    width: 100%;
+    height: 44px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    flex: 0.5;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: var(--accent-color);
+    /* Adding box shadow for button */
+    box-shadow: 0px 0px 2.8px rgba(0, 0, 0, 0.035), 0px 0px 22px rgba(0, 0, 0, 0.07);
+}
+
+.buttonAdd:hover {
+    transition: 300ms;
+    background-color: var(--accent-color-hover);
+}
+
+.buttonAdd.disabled {
+    background-color: red;
+}
+
+/* ToDo List */
+.toDoList {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styles */
+.toDoHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+}
+
+.toDoHeader p {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.toDoHeader p:first-child {
+    padding-left: 58px;
+    flex: 1;
+}
+
+.toDoHeader p:nth-child(2) {
+    flex: 1;
+    padding-right: 60px;
+}
+
+/* ToDo Record Transition handler */
+input.checkbox {
+    width: 16px;
+    width: 16px;
+}
+
+.toDoRecord {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: opacity 0.5s ease-out;
+    border-bottom: 1px solid var(--divider);
+    padding: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.toDoRecord.completed {
+    opacity: 0;
+}
+
+.toDoName {
+    flex: 1;
+}
+
+.toDoDate {
+    flex: 1;
+}
+
+.buttonDelete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+/* Delete Icon */
+#iconDelete:hover {
+    fill: red;
+}
+
+/* Footer styles */
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--tertiary-color);
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 500px) {
+    .actionBar {
+        flex-direction: column;
+    }
+
+    .inputContainer {
+        flex-direction: row;
+    }
+
+    .inputWrapper {
+        width: 100%;
+    }
+
+    .toDoRecord {
+        font-size: 1rem;
+    }
+}

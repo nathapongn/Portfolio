@@ -1,0 +1,27 @@
+/* Playground - Todo List  */
+.project-image.todo{
+    background-color: #E8F3FF;
+}
+.project-image.todo img{
+    object-fit: cover;
+}
+
+/* Playground - Calculator */
+.project-image.calculator{
+    background: #34495e;
+    width: 100%;
+}
+.project-image.calculator img{
+    padding: 4rem;
+    width: auto;
+    height: 100%;
+}
+
+/* Playgrond - Rock Paper Scissors */
+.project-image.rps{
+    background: rgb(238, 238, 238);
+}
+.project-image.rps img{
+    width: 100%;
+    height: auto;
+}
