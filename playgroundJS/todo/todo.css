@@ -110,6 +110,7 @@ button {
     cursor: pointer;
 }
 
+/* Add Button */
 .buttonAdd {
     min-width: 100px;
     width: 100%;
