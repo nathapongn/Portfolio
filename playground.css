@@ -4,6 +4,7 @@
 }
 .project-image.todo img{
     object-fit: cover;
+    height: 100%;
 }
 
 /* Playground - Calculator */
