@@ -376,6 +376,7 @@ button{
     justify-content: center;
     align-items: center;
     transition: 400ms;
+    padding-right: 10%;
 
 }
 .project-overlay.invest img{

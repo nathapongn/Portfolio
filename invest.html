@@ -30,206 +30,197 @@
 </head>
 <body>
     <main>
-        <!-- Header -->
-        <div id="header" class="header blurred">
-            <div class="header-content">
-                <div id="logoWrapper">
-                    <img id="siteLogo" src="Asset-Home/logo.svg" alt="My initials in Chinese stamp style">
-                    <a id="siteTitle" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
-                </div>
-                <div class="header-nav">
-                    <nav>
-                        <!-- Normal Menu -->
-                        <ul class="navmenu">
-                            <li class="nav-menu"><a href="index.html">Works</a></li>
-                            <li class="nav-menu"><a href="playground.html">Playground</a></li>
-                            <li class="nav-menu"><a href="about.html">About</a></li>
-                        </ul>
-                        <!-- Hamburger Icon -->
-                        <div class="ham" alt="Menu" onclick="openmenu()">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </nav>
-                </div>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-content">
+            <div id="logoWrapper">
+                <img id="siteLogo" src="Asset-Home/logo.svg" alt="My initials in Chinese stamp style">
+                <a id="siteTitle" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <!-- Normal Menu -->
+                    <ul class="navmenu">
+                        <li class="nav-menu"><a href="index.html">Works</a></li>
+                        <!-- <li class="nav-menu"><a href="playground.html">Playground</a></li> -->
+                        <li class="nav-menu"><a href="about.html">About</a></li>
+                    </ul>
+                    <!-- Hamburger Icon -->
+                    <div class="ham" alt="Menu" onclick="openmenu()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    
+                </nav>
             </div>
         </div>
-        <div class="progress-bar invest"></div>
+    </div>
 
-        <div class="heroBanner">
-            <div class="projectIntro invest">
-                <img src="Asset-UX/invest/logo.svg" alt="Flint Logo">
-                <p>Your Investing Partner.</p>
-            </div>
-            <picture>
-                <source
-                srcset="Asset-UX/invest/Banner_Mobile.webp"
-                media="(max-width: 900px)" 
-                >
-                <img src="Asset-UX/invest/Banner_Web.webp" alt="Flint, Investing for Everyone">
-            </picture>
+    <div class="progress-bar invest"></div>
+
+    <div class="heroBanner">
+        <div class="projectIntro invest">
+            <img src="Asset-UX/invest/logo.svg" alt="Flint Logo">
+            <p>Your Investing Partner.</p>
         </div>
+        <picture>
+            <source
+            srcset="Asset-UX/invest/Banner_Mobile.webp"
+            media="(max-width: 900px)" 
+            >
+            <img src="Asset-UX/invest/Banner_Web.webp" alt="Flint, Investing for Everyone">
+        </picture>
+    </div>
 
-        
-        <!-- <div class="projectOverview">
-            <div class="respo">
-                <p>Responsibilities</p>
-                <p>Wireframing</p>
-                <p>User Interface Design</p>
-                <p>Visual Design</p>
-                <p>Prototyping</p>
-            </div>
-        </div> -->
-
-            <div class="topic" id="context">
-                <div class="topicImage">
-                    <img src="Asset-UX/invest/streaming.png" alt="Project Context">
-                </div>
-                <div class="topicText">
-                    <div class="tag invest">One App Rules</div>
-                    <h1>Context</h1>
-                    <p>“Streaming” has long dominated as the sole stock investing app in Thailand since 2009. While its overwhelming ticker board interface and basic functionalities may appeal to parts of its experienced user base, they pose challenges for beginners due to their overly straightforward nature.
-                    <br>
-                    <br>
-                    Numerous pain points such as trading jargon, an uninformative interface, a slow deposit/withdrawal process, and a lack of personalization make the experience daunting for beginners.</p>
-                </div>
-            </div>
-
-            <div class="topic flip">
-                <div class="topicVideo">
-                    <video src="Asset-UX/invest/Video/Onboarding.mp4" type="video/mp4" autoplay loop muted playsinline></video>
-                </div>
-                <div class="topicText">
-                    <div class="tag invest">All-in-One</div>
-                    <h1>Objective</h1>
-                    <p>The goal is to design 'Flint,' an investing app that makes investing less intimidating by providing an informative and educational experience through a modern user-friendly interface. Flint aims to seamlessly integrate investing, savings, and spending into one convenient platform while ensuring accessibility by reducing cost barriers and offering extensive international investment opportunities.
-                    </p>
-                </div>
-            </div>
-            <div class="sectionText">
-                <div class="accent invest"></div>
-                <h1>Ideation</h1>
-                <p>I began visualizing my idea by sketching up wireframes of important menus, utilizing sets of keywords to define the core functions and features that I plan to include.
-                </p>
-            </div>
-            <div class="pair">
-                <img src="Asset-UX/invest/sketch1.webp" alt="Wireframe Sketch">
-                <img src="Asset-UX/invest/sketch2.webp" alt="Wireframe Sketch">
-            </div>
-
-                
-            <div class="gallery" id="showcase">
-                <img src="Asset-UX/invest/showcase1.webp" alt="">
-                <img src="Asset-UX/invest/showcase2.webp" alt="">
-                <img src="Asset-UX/invest/showcase3.webp" alt="">
-            </div>
-
-        <div class="topic">
-            <div class="topicVideo">
-                <video src="Asset-UX/invest/Video/Home.mp4" type="video/mp4" autoplay loop muted playsinline></video>
-            </div>
-            <div class="topicText">
-                <div class="tag invest">All About You</div>
-                <h1>Home</h1>
-                <p>Stay informed about your investments, track goals, view a personalized dividend calendar, and catch up on the latest articles—all in a distraction-free environment with only the information relevant to you.
-                </p>
-            </div>
-        </div>
-
-        <div class="topic flip">
-            <div class="topicVideo">
-                <video src="Asset-UX/invest/Video/Investing.mp4" type="video/mp4" autoplay loop muted playsinline></video>
-            </div>
-            <div class="topicText">
-                <div class="tag invest">Accessible</div>
-                <h1>Investing</h1>
-                <p>Odd lot purchase (orders of less than 100 shares) is integrated as part of Thai stocks investing to make highly priced large cap stocks more accessible to new investors. This reduces the risk of investors having to stretch beyond their risk tolerance or being compelled to invest in lower priced stocks that are often more volatile.</p>
-            </div>
-        </div>
-
-        <div class="topic">
-            <div class="topicVideo">
-                <video src="Asset-UX/invest/Video/Ticker.mp4" type="video/mp4" autoplay loop muted playsinline></video>
-            </div>
-            <div class="topicText">
-                <div class="tag invest">Insightful</div>
-                <h1>Securities Information</h1>
-                <p>By simply tapping on the text, information bottom sheets offer concise explanations for trading jargon and investing metric. This keeps investors informed and reduces the need to rely on external sources. 
-            </div>
-        </div>
-
-        <div class="sectionText small">
-            <div class="tag invest">Informative</div>
-            <h2>Alerts</h2>
-            <p>Bottom sheets automatically appear when users enter securities with alerts or critical information to enhance investors awareness and understanding.</p></p>
-        </div>
-
-        <div class="gallery" id="alert">
-            <div>
-                <img src="Asset-UX/invest/alert1.png" alt="Trading Alert Warning Bottom Sheet">
-                <p>Flagged Securities</p>
-            </div>
-            <div>
-                <img src="Asset-UX/invest/alert2.png" alt="Tax Benefit Fund Warning Bottom Sheet">
-                <p>Tax Benefit Funds</p>
-            </div>
-            <div>
-                <img src="Asset-UX/invest/alert3.png" alt="Leveraged Fund Warning Bottom Sheet">
-                <p>Leveraged Funds</p>
-            </div>
-        </div>
-
-        <div class="topic flip">
-            <div class="topicVideo">
-                <video src="Asset-UX/invest/Video/Wallet.mp4" type="video/mp4" autoplay loop muted playsinline></video>
-            </div>
-            <div class="topicText">
-                <div class="tag invest">Instant</div>
-                <h1>Wallet</h1>
-                <p>Just like a common savings account, users can deposit and withdraw funds instantaneously, scan QR to pay, transfer to other accounts, exchange currency all within one app. Users will no longer have to wait 2-3 business days to move their available balance from their wallet.</p>
-            </div>
-        </div>
-
-        <div class="topic">
+        <div class="topic" id="context">
             <div class="topicImage">
-                <img src="Asset-UX/invest/Card.png" alt="Cash Card">
+                <img src="Asset-UX/invest/streaming.png" alt="Project Context">
             </div>
             <div class="topicText">
-                <div class="tag invest">Convenience</div>
-                <h1>Cash Card</h1>
-                <p>Flint's cash card provides a hassle-free way to spend or withdraw cash from an ATM directly from the wallet. Real-time access to balances makes deposit commitments less intimidating for beginners.
-                </p>
+                <div class="tag invest">One App Rules</div>
+                <h1>Context</h1>
+                <p>“Streaming” has long dominated as the sole stock investing app in Thailand since 2009. While its overwhelming ticker board interface and basic functionalities may appeal to parts of its experienced user base, they pose challenges for beginners due to their overly straightforward nature.
+                <br>
+                <br>
+                Numerous pain points such as trading jargon, an uninformative interface, a slow deposit/withdrawal process, and a lack of personalization make the experience daunting for beginners.</p>
             </div>
         </div>
 
+        <div class="topic flip">
+            <div class="topicVideo">
+                <video src="Asset-UX/invest/Video/Onboarding.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+            </div>
+            <div class="topicText">
+                <div class="tag invest">All-in-One</div>
+                <h1>Objective</h1>
+                <p>The goal is to design 'Flint,' an investing app that makes investing less intimidating by providing an informative and educational experience through a modern user-friendly interface. Flint aims to seamlessly integrate investing, savings, and spending into one convenient platform while ensuring accessibility by reducing cost barriers and offering extensive international investment opportunities.
+                </p>
+            </div>
+        </div>
         <div class="sectionText">
             <div class="accent invest"></div>
-            <h1>Design System</h1>
-            <p>Snippets of UI components used to construct Flint, all built with the latest Figma variants and variable settings.</p>
+            <h1>Ideation</h1>
+            <p>I began visualizing my idea by sketching up wireframes of important menus, utilizing sets of keywords to define the core functions and features that I plan to include.
+            </p>
         </div>
-        
-        <div class="showcase">
-            <img src="Asset-UX/invest/sheet.png" alt="Flint Design System">
-            <img src="Asset-UX/invest/sheet2.png" alt="Flint Card Design Showcase">
-        </div>
-
-        <div class="topic">
-            <div class="topicImage">
-                <img src="Asset-UX/invest/ad.webp" alt="Flint on Poster">
-            </div>
-            <div class="topicText">
-                <h1>Key Takeaways</h1>
-                <p>This project offered me the opportunity to redefine the status quo of who investment is for in Thailand by envisioning a platform with the goal to lower the intimidation and the barrier surrounding the subject. The result is an investment app that promotes the idea that investment should be for all and doesn't have to be confusing and incovenient. By offering users more than the ability to invest, the app can seamlessly become a daily part of their financial journey even if they are not investors. The lowered cost barrier promotes inclusivity and improved access to information allows for self-learning and encourages proper investment due diligence. 
-                </p>
-            </div>
+        <div class="pair">
+            <img src="Asset-UX/invest/sketch1.webp" alt="Wireframe Sketch">
+            <img src="Asset-UX/invest/sketch2.webp" alt="Wireframe Sketch">
         </div>
 
-        <div class="thankYou">
-            <h1>Fin</h1>
-            <p>Thank You for visiting my portfolio!</p>
-            <a id="returnHome" href="index.html">Return Home</a>
+            
+        <div class="gallery" id="showcase">
+            <img src="Asset-UX/invest/showcase1.webp" alt="">
+            <img src="Asset-UX/invest/showcase2.webp" alt="">
+            <img src="Asset-UX/invest/showcase3.webp" alt="">
         </div>
+
+    <div class="topic">
+        <div class="topicVideo">
+            <video src="Asset-UX/invest/Video/Home.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="topicText">
+            <div class="tag invest">All About You</div>
+            <h1>Home</h1>
+            <p>Stay informed about your investments, track goals, view a personalized dividend calendar, and catch up on the latest articles—all in a distraction-free environment with only the information relevant to you.
+            </p>
+        </div>
+    </div>
+
+    <div class="topic flip">
+        <div class="topicVideo">
+            <video src="Asset-UX/invest/Video/Investing.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="topicText">
+            <div class="tag invest">Accessible</div>
+            <h1>Investing</h1>
+            <p>Odd lot purchase (orders of less than 100 shares) is integrated as part of Thai stocks investing to make highly priced large cap stocks more accessible to new investors. This reduces the risk of investors having to stretch beyond their risk tolerance or being compelled to invest in lower priced stocks that are often more volatile.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <div class="topicVideo">
+            <video src="Asset-UX/invest/Video/Ticker.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="topicText">
+            <div class="tag invest">Insightful</div>
+            <h1>Securities Information</h1>
+            <p>By simply tapping on the text, information bottom sheets offer concise explanations for trading jargon and investing metric. This keeps investors informed and reduces the need to rely on external sources. 
+        </div>
+    </div>
+
+    <div class="sectionText small">
+        <div class="tag invest">Informative</div>
+        <h2>Alerts</h2>
+        <p>Bottom sheets automatically appear when users enter securities with alerts or critical information to enhance investors awareness and understanding.</p></p>
+    </div>
+
+    <div class="gallery" id="alert">
+        <div>
+            <img src="Asset-UX/invest/alert1.png" alt="Trading Alert Warning Bottom Sheet">
+            <p>Flagged Securities</p>
+        </div>
+        <div>
+            <img src="Asset-UX/invest/alert2.png" alt="Tax Benefit Fund Warning Bottom Sheet">
+            <p>Tax Benefit Funds</p>
+        </div>
+        <div>
+            <img src="Asset-UX/invest/alert3.png" alt="Leveraged Fund Warning Bottom Sheet">
+            <p>Leveraged Funds</p>
+        </div>
+    </div>
+
+    <div class="topic flip">
+        <div class="topicVideo">
+            <video src="Asset-UX/invest/Video/Wallet.mp4" type="video/mp4" autoplay loop muted playsinline></video>
+        </div>
+        <div class="topicText">
+            <div class="tag invest">Instant</div>
+            <h1>Wallet</h1>
+            <p>Just like a common savings account, users can deposit and withdraw funds instantaneously, scan QR to pay, transfer to other accounts, exchange currency all within one app. Users will no longer have to wait 2-3 business days to move their available balance from their wallet.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <div class="topicImage">
+            <img src="Asset-UX/invest/Card.png" alt="Cash Card">
+        </div>
+        <div class="topicText">
+            <div class="tag invest">Convenience</div>
+            <h1>Cash Card</h1>
+            <p>Flint's cash card provides a hassle-free way to spend or withdraw cash from an ATM directly from the wallet. Real-time access to balances makes deposit commitments less intimidating for beginners.
+            </p>
+        </div>
+    </div>
+
+    <div class="sectionText">
+        <div class="accent invest"></div>
+        <h1>Design System</h1>
+        <p>Snippets of UI components used to construct Flint, all built with the latest Figma variants and variable settings.</p>
+    </div>
+    
+    <div class="showcase">
+        <img src="Asset-UX/invest/sheet.png" alt="Flint Design System">
+        <img src="Asset-UX/invest/sheet2.png" alt="Flint Card Design Showcase">
+    </div>
+
+    <div class="topic">
+        <div class="topicImage">
+            <img src="Asset-UX/invest/ad.webp" alt="Flint on Poster">
+        </div>
+        <div class="topicText">
+            <h1>Key Takeaways</h1>
+            <p>This project offered me the opportunity to redefine the status quo of who investment is for in Thailand by envisioning a platform with the goal to lower the intimidation and the barrier surrounding the subject. The result is an investment app that promotes the idea that investment should be for all and doesn't have to be confusing and incovenient. By offering users more than the ability to invest, the app can seamlessly become a daily part of their financial journey even if they are not investors. The lowered cost barrier promotes inclusivity and improved access to information allows for self-learning and encourages proper investment due diligence. 
+            </p>
+        </div>
+    </div>
+
+    <div class="thankYou">
+        <h1>Fin</h1>
+        <p>Thank You for visiting my portfolio!</p>
+        <a id="returnHome" href="index.html">Return Home</a>
+    </div>
     </main>
 
     <!-- ---------------FOOTER----------------- -->
