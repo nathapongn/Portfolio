@@ -264,11 +264,16 @@ footer img:hover{
     display: flex;
     flex-direction: column;
     transition-duration: 400ms;
-    overflow: hidden;
     width: 100%;
     flex-basis: calc(50% - 1rem);
     max-width: 800px;
     text-decoration: none;
+    position: relative;
+}
+.project:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    transition-duration: 400ms;
 }
 /* Project Image General Styling */
 .project-image{
@@ -291,11 +296,7 @@ img.thumbnail-image {
 a.project:visited{
     color: var(--color-primary);
 }
-.project:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-    transition-duration: 400ms;
-}
+
 /* Project and Read More Button */
 .project-text{
     display: flex;

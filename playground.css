@@ -1,3 +1,12 @@
+/* Playground - AQI List  */
+.project-image.aqi{
+    background-color: #D3D9F8;
+}
+.project-image.aqi img{
+    object-fit: cover;
+    height: 100%;
+}
+
 /* Playground - Todo List  */
 .project-image.todo{
     background-color: #E8F3FF;
@@ -25,4 +34,14 @@
 .project-image.rps img{
     width: 100%;
     height: auto;
+}
+
+/* JS Badge Styling */
+.badge{
+    position: absolute;
+    width: 32px;
+    z-index: 2;
+    top: 0;
+    left: -15px;
+    margin-top: 1rem;
 }
