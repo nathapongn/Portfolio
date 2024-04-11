@@ -424,7 +424,6 @@ button{
 .textBanner h1{
     font-size: 3rem;
 }
-
 .textBanner p{
     font-size: 1.25rem;
     color: var(--color-secondary)
