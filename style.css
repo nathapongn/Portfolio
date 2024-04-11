@@ -411,6 +411,31 @@ button{
     transition: 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
+/* Text Banner */
+.textBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 8vh 8vw 0 8vw;
+}
+.textBanner h1{
+    font-size: 3rem;
+}
+
+.textBanner p{
+    font-size: 1.25rem;
+    color: var(--color-secondary)
+}
+
+/* Custom Text Banner Styling */
+.textBanner.invest{
+    background-color: #F8F9FB;
+}
+
+
 /* Hero Banner styling */
 
 .heroBanner{

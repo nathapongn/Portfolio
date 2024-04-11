@@ -4,7 +4,8 @@
 }
 .project-image.aqi img{
     object-fit: cover;
-    height: 80%;
+    height: auto;
+    width: 100%;
 }
 
 /* Playground - Todo List  */
@@ -22,7 +23,7 @@
     width: 100%;
 }
 .project-image.calculator img{
-    padding: 4rem;
+    padding: 3rem;
     width: auto;
     height: 100%;
 }
