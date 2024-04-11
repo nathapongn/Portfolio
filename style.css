@@ -677,6 +677,7 @@ img.project-image.lmwn{
     flex-direction: column;
     gap: 1rem;
     max-width: 60ch;
+    min-width: 30ch;
     text-align: left;
 }
 .topicText p{
