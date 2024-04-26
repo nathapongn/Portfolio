@@ -11,7 +11,7 @@ const cityName = document.querySelector('.cityName');
 const aqiAverage = document.querySelector('.aqiAverage');
 const aqiLevel = document.querySelector('.aqiLevel');
 
-const info = document.querySelector('.info');
+const card = document.querySelector('.card');
 
 const temp = document.querySelector('.temp');
 const pm25 = document.querySelector('.pm25');
@@ -32,7 +32,7 @@ inputCity.addEventListener('keypress', (e) => {
 })
 
 inputCity.addEventListener('focus', () => {
-    inputWrapper.style.outline = '1px solid white'
+    inputWrapper.style.outline = '1.5px solid white'
 })
 
 inputCity.addEventListener('blur', () => {
@@ -42,6 +42,7 @@ inputCity.addEventListener('blur', () => {
 window.addEventListener('load', () => FetchAPI())
 
 async function FetchAPI () {
+    
     let city = inputCity.value || 'here';
 
     let data = await fetch(apiURL + '/' + city + '/' + apiToken); 
@@ -70,7 +71,6 @@ function renderAQI (response) {
         if (response.data.aqi > 0 && response.data.aqi <= 50) {
         aqiLevel.innerHTML = 'Good';
         main.style.background = 'linear-gradient(180deg, rgba(79,150,202,1) 0%, rgba(240,246,246,1) 100%)'
-
         } else if (response.data.aqi > 50 && response.data.aqi <= 100) {
         aqiLevel.innerHTML = 'Moderate';
         main.style.background = 'linear-gradient(180deg, rgba(105,152,186,1) 0%, rgba(235,233,228,1) 100%)'
@@ -98,6 +98,9 @@ function renderAQI (response) {
         o3.innerHTML = Math.round(response.data.iaqi.o3.v);
         no2.innerHTML = Math.round(response.data.iaqi.no2.v);
         so2.innerHTML = Math.round(response.data.iaqi.so2.v);
+
+        // Background color
+
 
     } else {
         // Handle if response status not OK

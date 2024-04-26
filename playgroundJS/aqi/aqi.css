@@ -20,7 +20,8 @@ main{
     background-color: black;
     height: 100%;
     min-height: 100vh;
-    background: rgb(154, 154, 154);
+    background-color: rgb(154, 154, 154);
+    transition: background-color 5000ms linear;
     font-size: 1.2rem;
 }
 
@@ -51,7 +52,7 @@ main{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.info{
+.card{
     background-color: rgba(15,15,15,0.10);
 
     display: flex;

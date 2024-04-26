@@ -1,15 +1,16 @@
 /* Playground - AQI List  */
 .project-image.aqi{
-    background-color: #D3D9F8;
+    background-color: #E8F3FF;
 }
 .project-image.aqi img{
     object-fit: cover;
-    height: 100%;
+    height: auto;
+    width: 100%;
 }
 
 /* Playground - Todo List  */
 .project-image.todo{
-    background-color: #E8F3FF;
+    background-color: #EAE8FF;
 }
 .project-image.todo img{
     object-fit: cover;
@@ -22,7 +23,7 @@
     width: 100%;
 }
 .project-image.calculator img{
-    padding: 4rem;
+    padding: 3rem;
     width: auto;
     height: 100%;
 }

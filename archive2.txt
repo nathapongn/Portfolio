@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathapongn - Playground</title>
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Nathapong Nurae - Portfolio">
+    <meta property="og:description" content="UX/UI Portfolio & collection of works by Nathapong Nurae">
+    <meta property="og:image" itemprop="image" content="img2/social-share.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="http://nathapongn.github.io">
+    <meta property="og:image:alt" content="img/favicon-red.ico">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="android-chrome" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+    
+    
+    <!-- Desktop Stylesheet -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="playground.css"> 
+
+    <!-- Satoshi Font -->
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+
+</head>
+<body>
+    <main>
+        <!-- HEADER -->
+        <div id="header" class="header blurred">
+            <div class="header-content">
+                <div id="logoWrapper">
+                    <img id="siteLogo" src="Asset-Home/logo.svg" alt="My initials in Chinese stamp style">
+                    <a id="siteTitle" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
+                </div>
+                <div class="header-nav">
+                    <nav>
+                        <!-- Normal Menu -->
+                        <ul class="navmenu">
+                            <li class="nav-menu"><a href="index.html">Works</a></li>
+                            <li class="nav-menu active-menu"><a href="playground.html">Playground</a></li>
+                            <li class="nav-menu"><a href="about.html">About</a></li>
+                        </ul>
+                        <!-- Hamburger Icon -->
+                        <div class="ham" alt="Menu" onclick="openmenu()">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="intro playground">
+            <div class="introText">
+                <h1>Playground</h1>
+                <p>Collection of JavaScript Practice Projects</p>
+            </div>
+        </div>
+
+        <div class="more">
+            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/zmkotitn.json"
+                trigger="loop"
+                delay="400"
+                colors="primary:#121331"
+                style="width:40px;height:40px">
+            </lord-icon>
+        </div>
+
+        <div class="portfolio">
+            <a href="playgroundJS/aqi/aqi.html" target="_blank" class="project aqi">
+                
+                <img class="badge" src="Asset-Home/JS.svg" alt="JavaScript Practice Project">
+
+                <div class="project-image aqi">
+                    <!-- Actual Thumbnail -->
+                    <img src="Asset-playground/aqi.png" alt="" class="thumbnail-image todo">
+                </div>
+
+                <!-- Title / Description / Read More Button -->
+                <div class="project-text">
+                    <div class="project-description">
+                            <h1>Air Quality Index</h1>
+                            <p>Fetch API JavaScript Project</p>    
+                    </div>
+                    <div class="explore-button-icon">
+                        <button class="explore">View Project</button>
+                        <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                    </div>
+                </div>
+
+                
+            </a>
+            
+
+            <a href="playgroundJS/todo/todo.html" target="_blank" class="project todo">
+                
+                <img class="badge" src="Asset-Home/JS.svg" alt="JavaScript Practice Project">
+
+                <div class="project-image todo">
+                    <!-- Actual Thumbnail -->
+                    <img src="Asset-playground/todo.png" alt="" class="thumbnail-image todo">
+                </div>
+
+                <!-- Title / Description / Read More Button -->
+                <div class="project-text">
+                    <div class="project-description">
+                            <h1>To-do List</h1>
+                            <p>To-do List JavaScript project</p>    
+                    </div>
+                    <div class="explore-button-icon">
+                        <button class="explore">View Project</button>
+                        <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                    </div>
+                </div>
+
+                
+            </a>
+
+            <a href="playgroundJS/calc/calc.html" target="_blank" class="project calculator">
+
+                <img class="badge" src="Asset-Home/JS.svg" alt="JavaScript Practice Project">
+                
+                <div class="project-image calculator">
+                    <!-- Actual Thumbnail -->
+                    <img src="Asset-playground/Calculator.svg" alt="" class="thumbnail-image calculator">
+                </div>
+
+                <!-- Title / Description / Read More Button -->
+                <div class="project-text">
+                    <div class="project-description">
+                            <h1>Calculator</h1>
+                            <p>Calculator JavaScript project</p>    
+                    </div>
+                    <div class="explore-button-icon">
+                        <button class="explore">View Project</button>
+                        <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                    </div>
+                </div>
+            </a>
+
+    </main>
+
+    <!-- ---------------FOOTER----------------- -->
+
+    <footer>
+        <div class="footer-text">
+            <p>Bangkok, Thailand</p>
+            <p>© Nathapong Nurae 2023. All rights reserved</p>
+        </div>
+        <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
+            <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
