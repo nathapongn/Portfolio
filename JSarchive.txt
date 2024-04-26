@@ -1,0 +1,71 @@
+        <!-- JavaScript Projects -->
+        <a href="playgroundJS/aqi/aqi.html" target="_blank" class="project aqi">
+                
+            <img class="badge" src="Asset-Home/JS.svg" alt="JavaScript Practice Project">
+
+            <div class="project-image aqi">
+                <!-- Actual Thumbnail -->
+                <img src="Asset-playground/aqi.png" alt="" class="thumbnail-image todo">
+            </div>
+
+            <!-- Title / Description / Read More Button -->
+            <div class="project-text">
+                <div class="project-description">
+                        <h1>Air Quality Index</h1>
+                        <p>JavaScript Fetch API</p>    
+                </div>
+                <div class="explore-button-icon">
+                    <button class="explore">View Project</button>
+                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                </div>
+            </div>
+
+            
+        </a>
+        
+
+        <a href="playgroundJS/todo/todo.html" target="_blank" class="project todo">
+            
+            <img class="badge" src="Asset-Home/JS.svg" alt="JavaScript Practice Project">
+
+            <div class="project-image todo">
+                <!-- Actual Thumbnail -->
+                <img src="Asset-playground/todo.png" alt="" class="thumbnail-image todo">
+            </div>
+
+            <!-- Title / Description / Read More Button -->
+            <div class="project-text">
+                <div class="project-description">
+                        <h1>To-do List</h1>
+                        <p>JavaScript Arrays</p>    
+                </div>
+                <div class="explore-button-icon">
+                    <button class="explore">View Project</button>
+                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                </div>
+            </div>
+
+            
+        </a>
+
+        <a href="playgroundJS/calc/calc.html" target="_blank" class="project calculator">
+
+            <img class="badge" src="Asset-Home/JS.svg" alt="JavaScript Practice Project">
+            
+            <div class="project-image calculator">
+                <!-- Actual Thumbnail -->
+                <img src="Asset-playground/Calculator.svg" alt="" class="thumbnail-image calculator">
+            </div>
+
+            <!-- Title / Description / Read More Button -->
+            <div class="project-text">
+                <div class="project-description">
+                        <h1>Calculator</h1>
+                        <p>JavaScript Strings & Calculations</p>    
+                </div>
+                <div class="explore-button-icon">
+                    <button class="explore">View Project</button>
+                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="Read More">
+                </div>
+            </div>
+        </a>

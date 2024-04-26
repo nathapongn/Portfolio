@@ -359,14 +359,14 @@ button{
 /* Project Invest */
 
 .project-image.invest{
-    background: linear-gradient(180deg, #4E7AEC 0%, #4E7AEC 0.01%, #4551DF 100%);
+    background: linear-gradient(180deg, #4E7AEC 0%, #5763F0 100%);
 }
 
 /* Overlay Invest*/
 .project-overlay.invest{
     opacity: 0;
     z-index: 2;
-    background: linear-gradient(180deg, #4E7AEC 0%, #4E7AEC 0.01%, #4551DF 100%);;
+    background: linear-gradient(180deg, #4E7AEC 0%, #5763F0 100%);
     position: absolute;
     width: 100%;
     height: 100%;
