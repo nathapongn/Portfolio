@@ -39,7 +39,7 @@
 .thankYou{
     width: 100%;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5;
     padding: var(--body-padding);
     display: flex;
     flex-direction: column;
@@ -47,11 +47,12 @@
     align-items: center;
     gap: 1rem;
 }
-.thankYou h1{
+.thankYou h2{
     font-size: 3rem;
 }
 .thankYou p{
     font-size: var(--font-bodyS);
+    color: var(--color-secondary);
 }
 #returnHome{
     color: white;
@@ -316,50 +317,16 @@ a.project:visited{
     margin-top: 0.5rem;
 }
 
-/* Project Animated Read More Arrow */
-.project:hover > .project-text > .explore-button-icon > .explore-arrow{
-    opacity: 1;
-    transition-duration: 400ms;
-    transform: translateX(0.24rem);
-}
-.project:hover > .project-text > .explore-button-icon > .explore{
-    transition-duration: 400ms;
-    color: var(--color-accent);
-    font-weight: 600;
-}
+
 .project-image.invest{
     align-items: flex-end;
+    background: linear-gradient(180deg, #4E7AEC 0%, #8C66F8 100%);
 }
 
-/* Portfolio Animated Arrow Explore */
-.explore{
-    color: var(--color-accent);
-    font-weight: 600;
-    cursor: pointer;
-}
-.explore-button-icon{
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: fit-content;
-}
-button{
-   background: none;
-   border: none;
-   font-size: 1.1rem;
-}
-.explore-arrow {
-    margin-top: 4px;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-}
-
-/* Project Invest */
-
-.project-image.invest{
-    background: linear-gradient(180deg, #4E7AEC 0%, #5763F0 100%);
+.project-image.invest img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Overlay Invest*/
@@ -409,6 +376,43 @@ button{
 .project.invest:hover > .project-image.invest > .project-overlay.invest :nth-child(3){
     transform: translateY(0%);
     transition: 400ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+
+/* Portfolio Animated Arrow Explore */
+.explore{
+    color: var(--color-accent);
+    font-weight: 600;
+    cursor: pointer;
+}
+.explore-button-icon{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+}
+button{
+   background: none;
+   border: none;
+   font-size: 1.1rem;
+}
+.explore-arrow {
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+/* Project Animated Read More Arrow */
+.project:hover > .project-text > .explore-button-icon > .explore-arrow{
+    opacity: 1;
+    transition-duration: 400ms;
+    transform: translateX(0.24rem);
+}
+.project:hover > .project-text > .explore-button-icon > .explore{
+    transition-duration: 400ms;
+    color: var(--color-accent);
+    font-weight: 600;
 }
 
 /* Text Banner */
