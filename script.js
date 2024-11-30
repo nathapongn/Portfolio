@@ -1,26 +1,64 @@
-const ham = document.querySelector(".ham");
-const navmenu = document.querySelector(".navmenu");
+// Redirect to Linkedin by opening new window
 
-ham.addEventListener("click", () => {
-    ham.classList.toggle("active");
-    navmenu.classList.toggle("active");
+const buttonLinkedin = document.querySelector('.linkedin');
+
+buttonLinkedin.addEventListener('click', () => {
+    window.open('https://www.linkedin.com/in/nathapongn/');
 })
 
-var typed = new Typed(".auto-type", {
-    strings: ["Nat", "a UX/UI Designer"],
-    typeSpeed: 150,
-    backSpeed: 150,
-    loop: true
+// Site Logo to Home
+const siteLogo = document.querySelector('.site-logo');
+
+siteLogo.addEventListener('click', () => {
+    window.location.href = 'index.html'; // Redirects to index.html
+});
+
+
+// Hamburger Menu for Mobile
+
+const buttonMenuOpen = document.querySelector('.button-hamburger.open');
+const buttonMenuClose = document.querySelector('.button-hamburger.close');
+const mobileMenu = document.querySelector('.menu-hamburger')
+
+buttonMenuOpen.addEventListener('click', () => {
+    mobileMenu.style.transition = '300ms';
+    mobileMenu.style.display = 'flex';
+    mobileMenu.style.top = '0';
 })
-// slider
-function scrolll(){
-    var left=document.querySelector(".slider")
-    left.scrollBy(-785, 0)
-}
-function scrollr(){
-    var right=document.querySelector(".slider")
-    right.scrollBy(785, 0)
-}
+
+buttonMenuClose.addEventListener('click', () => {
+    mobileMenu.style.transition = '300ms';
+    mobileMenu.style.top = '-100%';
+    setTimeout(() => {mobileMenu.style.display = 'none'}, 300);
+})
+
+// Hover Theme Toggle Button Effect
+
+const toggleButtons = document.querySelectorAll('.button-toggle-theme');
+
+toggleButtons.forEach(button => {
+
+    // SVG Icon inside button
+    const buttonIcon = button.querySelector('img');
+
+    // Default outline icon svg source
+    const defaultIcon = buttonIcon.getAttribute('src');
+
+    // Button mouse enter  
+    button.addEventListener('mouseover', () => {
+        // Get fill icon svg from custom data attribute
+        const fillIcon = buttonIcon.getAttribute('data-icon-fill');
+
+        buttonIcon.setAttribute('src', fillIcon);
+    })
+
+    // Button mouse leave
+    button.addEventListener('mouseout', () => {
+        // Set to original icon
+        buttonIcon.setAttribute('src', defaultIcon);
+    })
+})
 
 
-
+// Refresh AOS
+window.addEventListener('load', AOS.refresh);

@@ -1,189 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Nathapong Nurae - Portfolio">
-    <meta property="og:description" content="UX/UI Portfolio & collection of works by Nathapong Nurae">
-    <meta property="og:image" itemprop="image" content="img2/social-share.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="http://nathapongn.github.io">
-    <meta property="og:image:alt" content="img/favicon-red.ico">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/ico" href="img/favicon-red.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="android-chrome" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
-    
-    <!-- Satoshi Font -->
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+        <!-- OPEN GRAPH -->
+        <meta property="og:title" content="Nathapong Nurae - Portfolio">
+        <meta property="og:description" content="Nathapong Nurae - UX Design Portfolio">
+        <meta property="og:image" itemprop="image" content="asset/image/share.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:url" content="http://nathapongn.github.io">
+        <meta property="og:image:alt" content="asset/fav/favicon-red.ico">
 
-    <!-- Desktop Stylesheet -->
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="playground.css">
-
-    <title>Nathapongn - PORTFOLIO</title>
-</head>
-<body>
-    
-<main>
-    <!-- HEADER -->
-    <div class="header">
-        <div class="header-content">
-            <div id="logoWrapper">
-                <img id="siteLogo" src="Asset-Home/logo.svg" alt="My initials in Chinese stamp style">
-                <a id="siteTitle" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
-            </div>
-            <div class="header-nav">
-                <nav>
-                    <!-- Normal Menu -->
-                    <ul class="navmenu">
-                        <li class="nav-menu active-menu"><a href="index.html">Works</a></li>
-                        <!-- <li class="nav-menu"><a href="playground.html">Playground</a></li> -->
-                        <li class="nav-menu"><a href="about.html">About</a></li>
-                    </ul>
-                    <!-- Hamburger Icon -->
-                    <div class="ham" alt="Menu" onclick="openmenu()">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    
-                </nav>
-            </div>
-        </div>
-    </div>
-
-    <div class="intro">
-        <div class="introText">
-            <h1><span class="animateText"></span></h1>
-            <p>My name is Nat, I'm a UX Designer based in Bangkok. Currently designing at SCB - Siam Commercial Bank, here to make B2B banking less boring.</p> 
-        </div>
-        <img src="Asset-Home/myName.svg" alt="This is an image of my name written in Thai">
-    </div>
-
-    <div class="more">
-        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-        <lord-icon
-            src="https://cdn.lordicon.com/zmkotitn.json"
-            trigger="loop"
-            delay="400"
-            colors="primary:#121331"
-            style="width:40px;height:40px">
-        </lord-icon>
-    </div>
-
-    <div class="portfolio">
-        <a href="invest.html" class="project invest">    
-            <div class="project-image invest">
-                <!-- Overlay div when hover -->
-                <div class="project-overlay invest">
-                    <img src="Asset-UX/invest/phoneLast.png" alt="Flint Explore Page">
-                    <img src="Asset-UX/invest/phoneMid.png" alt="Flint Home Page">
-                    <img src="Asset-UX/invest/cardFront.svg" alt="Flint Cash Cards">
-                </div>
-                <!-- Actual thumbnail -->
-                <img src="Asset-UX/invest/thumb.png" alt="" class="thumbnail-image invest">
-            </div>
-
-            <!-- Title / Description / Read More Button -->
-            <div class="project-text">
-                <div>
-                    <h1>Flint</h1>
-                    <p>All-in-One Investing Partner</p>    
-                </div>
-                <div class="explore-button-icon">
-                    <button class="explore">View Project</button>
-                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="View Project">
-                </div>
-            </div>
-        </a>
-
-        <a href="grow.html" class="project grow">    
-            <div class="project-image grow">
-                <!-- Overlay div when hover -->
-                <div class="project-overlay grow">
-                    <img src="Asset-UX/grow/thumbBack.png" alt="Grow 2 Zero Cover">
-                    <img src="Asset-UX/grow/thumbFront.png" alt="Grow 2 Zero Cover">
-                </div>
-                <!-- Actual thumbnail -->
-                <img class="thumbnail-image grow" src="Asset-UX/grow/thumb.png" alt="">
-            </div>
-
-            <!-- Title / Description / Read More Button -->
-            <div class="project-text">
-                <div>
-
-                    <h1>Grow 2 Zero</h1>
-                    <p>Carbon Credit Landing Page</p>    
-                </div>
-                <div class="explore-button-icon">
-                    <button class="explore">View Project</button>
-                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="View Project">
-                </div>
-            </div>
-        </a>
-
-        <a href="lmwn.html" class="project lmwn">
-            
-            <div class="project-image lmwn">
-                <!-- Overlay div when hover -->
-                <div class="project-overlay lmwn">
-                    <img class="lm" src="Icons/LM.svg" alt="">
-                    <img class="wn" src="Icons/WN.svg" alt="">
-                </div>
-                <!-- Actual Thumbnail -->
-                <img class="thumbnail-image lmwn" src="Asset-UX/lmwn/LMWN-Portfolio-Thumbnail2.svg" alt="" >
-            </div>
-
-            <div class="project-text">
-                <div>
-                        <h1>LINE MAN Wongnai</h1>
-                        <p>UX Design Internship</p>    
-                </div>
-                <div class="explore-button-icon">
-                    <button class="explore">View Article</button>
-                    <img class="explore-arrow" src="Icons/Explore-Button-Icon.svg" alt="View Project">
-                </div>
-            </div>
-        </a>
-
-
-
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/ico" href="asset/fav/favicon-red.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="asset/fav/apple-touch-icon.png">
+        <link rel="android-chrome" type="image/png" sizes="192x192" href="asset/fav/android-chrome-192x192.png">
         
-    </div>            
-</main>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
 
-<!-- ---------------FOOTER----------------- -->
+        <title>Portfolio - Nathapong Nurae</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="navigation-wrapper">
+                <div class="site-name-wrapper">
+                    <img class="dynamic-asset site-logo" src="" data-asset-light="asset/image/logo-light.svg" data-asset-dark="asset/image/logo-dark.svg" alt="">
+                    <a href="index.html" class="site-name text-title-3">Nathapong Nurae</a>
+                </div>
 
-<footer>
-    <div class="footer-text">
-        <p>Bangkok, Thailand</p>
-        <p>© Nathapong Nurae 2023. All rights reserved</p>
-    </div>
-    <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
-        <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
-    </a>
-</footer>
-
-<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-<script src="script.js"></script>
-<script src="typed.js"></script>
-
-<script>
-
-    var typed = new Typed (".animateText", {
-        strings: ["Hello!", "Glad to see you!"],
-        typeSpeed: 50,
-        backSpeed: 50,
-        loop: true
-    });
+                <div class="navigation-action">
+                    <div class="menu-list">
+                        <a href="index.html" class="work text-subtitle-2 menu current">Work</a>
+                        <a href="about.html" class="about text-subtitle-2 menu">About</a>
+                    </div>
     
-</script>
+                    <button class="button-toggle-theme dark">
+                        <img src="asset/icon/dark.svg" data-icon-fill="asset/icon/dark-fill.svg" alt="Toggle Dark Mode">
+                    </button>
+                    <button class="button-toggle-theme light">
+                        <img src="asset/icon/light.svg" data-icon-fill="asset/icon/light-fill.svg" alt="Toggle Light Mode">
+                    </button>
+                </div>
+                
+                <div class="button-hamburger open">
+                    <img src="asset/icon/hamburger-open.svg" alt="Open Menu">
+                </div>
+            </div>
+        </nav>
 
-</body>
+        <nav class="menu-hamburger">
+            <a href="index.html" class="work text-title-2 menu current">Work</a>
+            <a href="about.html" class="about text-title-2 menu">About</a>
+
+            <button class="button-toggle-theme dark">
+                <img src="asset/icon/dark.svg" data-icon-fill="asset/icon/dark-fill.svg" alt="Toggle Dark Mode">
+            </button>
+            <button class="button-toggle-theme light">
+                <img src="asset/icon/light.svg" data-icon-fill="asset/icon/light-fill.svg" alt="Toggle Light Mode">
+            </button>
+
+            <div class="button-hamburger close">
+                <img src="asset/icon/hamburger-close.svg" alt="Open Menu">
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-wrapper">
+                <h1 class="greeting text-title-1">Hello!</h1>
+                <p class="summary text-subtitle-1">
+                I'm Nat, a <span class="text-subtitle-1-strong accent">UX Designer</span> based in Bangkok. <br>Currently designing at <strong>SCB - Siam Commercial Bank</strong>, here to make banking easier, one pixel at a time.
+                </p>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="portfolio-wrapper">
+                <a href="nimbus.html" class="card nimbus">
+                    <div class="card-thumbnail nimbus">
+                        <img class="card-image nimbus dynamic-asset" src="" data-asset-light="asset/image/project/nimbus/thumbnail-light.svg" data-asset-dark="asset/image/project/nimbus/thumbnail-dark.svg" alt="">
+                    </div>
+                    <div class="card-footer nimbus">
+                        <div class="card-label nimbus">
+                            <h2 class="card-title text-title-2">Nimbus</h2>
+                            <p class="card-subtitle text-body-1">Streamline personal finance management</p>
+                        </div>
+    
+                        <div class="card-arrow">
+                            <img src="asset/icon/arrow-right.svg">
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="flint.html" class="card flint">
+                    <div class="card-thumbnail flint">
+                        <img class="card-image flint" src="asset/image/project/flint/thumbnail.png" alt="">
+                    </div>
+                    <div class="card-footer flint">
+                        <div class="card-label flint">
+                            <h2 class="card-title text-title-2">Flint</h2>
+                            <p class="card-subtitle text-body-1">Make investing less intimidating by design</p>
+                        </div>
+    
+                        <div class="card-arrow">
+                            <img src="asset/icon/arrow-right.svg">
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="lmwn.html" class="card lmwn">
+                    <div class="card-thumbnail lmwn">
+                        <img class="card-image lmwn" src="asset/image/project/lmwn/thumbnail.png" alt="">
+                    </div>
+                    <div class="card-footer lmwn">
+                        <div class="card-label lmwn">
+                            <h2 class="card-title text-title-2">LINE MAN Wongnai</h2>
+                            <p class="card-subtitle text-body-1">UX Design Internship</p>
+                        </div>
+    
+                        <div class="card-arrow">
+                            <img src="asset/icon/arrow-right.svg">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer invert-1">
+            <div class="footer-wrapper">
+                <div class="footer-contact">
+                    <div class="contact-label">
+                        <h2 class="contact-title text-title-2">Liking what you're seeing?</h2>
+                        <p class="contact-subtitle text-subtitle-2">Let's work together!</p>
+                    </div>
+                    <img onclick="toLinkedin()" class="linkedin" src="asset/icon/linkedin.svg" alt="Go to my Linkedin Profile">
+                </div>
+                <hr class="divider">
+                <p class="text-body-2">Designed on Figma, made with Visual Studio Code.</p>
+            </div>
+        </footer>
+
+        <div class="copyright invert-2">
+            <div class="copyright-wrapper">
+                <p class="text-body-2">© 2024 Nathapong Nurae. All rights reserved.</p>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+        <script src="darkmode.js"></script>
+        
+    </body>
 </html>

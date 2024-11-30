@@ -1,97 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- OpenGraph -->
-    <meta property="og:title" content="Nathapong Nurae - Portfolio">
-    <meta property="og:description" content="UX/UI Portfolio & collection of works by Nathapong Nurae">
-    <meta property="og:image" itemprop="image" content="img2/social-share.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:url" content="http://nathapongn.github.io">
-    <meta property="og:image:alt" content="img/favicon.ico">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/ico" href="img/favicon-red.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="android-chrome" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
-
-    <!-- Desktop Stylesheet -->
-    <link rel="stylesheet" href="style.css"> 
-
-    <!-- Satoshi Font -->
-    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
-
-    <title>Nathapongn - About</title>
-</head>
-<body>
-
-    <main>
-        <!-- HEADER -->
-        <div id="header" class="header blurred">
-            <div class="header-content">
-                <div id="logoWrapper">
-                    <img id="siteLogo" src="Asset-Home/logo.svg" alt="My initials in Chinese stamp style">
-                    <a id="siteTitle" href="index.html" alt="Nathapong Portfolio">Nathapong Nurae</a>
-                </div>
-                <div class="header-nav">
-                    <nav>
-                        <!-- Normal Menu -->
-                        <ul class="navmenu">
-                            <li class="nav-menu"><a href="index.html">Works</a></li>
-                            <li class="nav-menu active-menu"><a href="about.html">About</a></li>
-                        </ul>
-                        <!-- Hamburger Icon -->
-                        <div class="ham" alt="Menu" onclick="openmenu()">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                        
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-        <div class="topic aboutMe">
-            <div class="topicImage">
-                <img src="Asset-About/Me.jpg" id="myPhoto" alt="Photo of Me in Tokyo">
-            </div>
-            <div class="topicText">
-                <h1 class="animateText">I'm <span class="animate"></span></h1>
-                <p>Currently a UX Designer at SCB - Siam Commercial Bank working on various B2B digital banking products including, Corporate Banking Platform, Enterprise Trade Solution, and Investment Portal. <br><br> I love reading non-fiction books and listening to music on repeat. Thank you for visiting my online portfolio!
-                </p>
-            </div>
-        </div>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
         
-    </main>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <footer>
-        <div class="footer-text">
-            <p>Bangkok, Thailand</p>
-            <p>© Nathapong Nurae 2023. All rights reserved</p>
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+        <title>Portfolio - Nathapong Nurae</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="navigation-wrapper">
+                <div class="site-name-wrapper">
+                    <img class="dynamic-asset site-logo" src="" data-asset-light="asset/image/logo-light.svg" data-asset-dark="asset/image/logo-dark.svg" alt="">
+                    <a href="index.html" class="site-name text-title-3">Nathapong Nurae</a>
+                </div>
+
+                <div class="navigation-action">
+                    <div class="menu-list">
+                        <a href="index.html" class="work text-subtitle-2 menu">Work</a>
+                        <a href="about.html" class="about text-subtitle-2 menu current">About</a>
+                    </div>
+    
+                    <button class="button-toggle-theme dark">
+                        <img src="asset/icon/dark.svg" data-icon-fill="asset/icon/dark-fill.svg" alt="Toggle Dark Mode">
+                    </button>
+                    <button class="button-toggle-theme light">
+                        <img src="asset/icon/light.svg" data-icon-fill="asset/icon/light-fill.svg" alt="Toggle Light Mode">
+                    </button>
+                </div>
+                
+                <div class="button-hamburger open">
+                    <img src="asset/icon/hamburger-open.svg" alt="Open Menu">
+                </div>
+            </div>
+        </nav>
+
+        <nav class="menu-hamburger">
+            <a href="index.html" class="work text-title-2 menu">Work</a>
+            <a href="about.html" class="about text-title-2 menu current">About</a>
+
+            <button class="button-toggle-theme dark">
+                <img src="asset/icon/dark.svg" data-icon-fill="asset/icon/dark-fill.svg" alt="Toggle Dark Mode">
+            </button>
+            <button class="button-toggle-theme light">
+                <img src="asset/icon/light.svg" data-icon-fill="asset/icon/light-fill.svg" alt="Toggle Light Mode">
+            </button>
+
+            <div class="button-hamburger close">
+                <img src="asset/icon/hamburger-close.svg" alt="Open Menu">
+            </div>
+        </nav>
+
+        <section class="media-block">
+            <div class="media-wrapper">
+                <div class="media">
+                    <img src="asset/image/about/me-dark.jpg" alt="My Photo in Shibuya, Tokyo">
+                </div>
+    
+                <div class="media-label">
+                    <h2 class="media-title text-title-2">Hey there!</h2>
+                    <p class="media-subtitle text-body-1">My name is Nathapong but you can call me Nat. I'm a UX Designer from Bangkok, Thailand, currently designing at SCB - Siam Commercial Bank.
+                    <br><br>
+                    I have experiences designing B2B banking platforms used by a wide range of businesses, from SMEs to Thailand's biggest corporations, to conduct their finances. I have designed corporate banking platforms, trade portals, bank admin tools and more.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-desktop">
+            <h2 class="text-title-2">My Design Tools</h2>
+            <div class="desktop-icon-row">
+                <img class="desktop-icon" src="asset/icon/figma.svg" alt="Figma">
+                <img class="desktop-icon" src="asset/icon/protopie.svg" alt="Protopie">
+                <img class="desktop-icon" src="asset/icon/vscode.svg" alt="Virtual Studio Code">
+                <img class="desktop-icon" src="asset/icon/github-desktop.svg" alt="GitHub Desktop">
+                <img class="desktop-icon" src="asset/icon/gpt.svg" alt="GitHub Desktop">
+                <img class="desktop-icon" src="asset/icon/photoshop.svg" alt="Adobe Photoshop">
+                <img class="desktop-icon" src="asset/icon/premiere.svg" alt="Adobe Premiere Pro">
+            </div>
+        </section>
+        
+        <footer class="footer invert-1">
+            <div class="footer-wrapper">
+                <div class="footer-contact">
+                    <div class="contact-label">
+                        <h2 class="contact-title text-title-2">Liking what you're seeing?</h2>
+                        <p class="contact-subtitle text-subtitle-2">Let's work together!</p>
+                    </div>
+                    <img onclick="toLinkedin()" class="linkedin" src="asset/icon/linkedin.svg" alt="Go to my Linkedin Profile">
+                </div>
+                <hr class="divider">
+                <p class="text-body-2">Designed on Figma, made with Visual Studio Code.</p>
+            </div>
+        </footer>
+
+        <div class="copyright invert-2">
+            <div class="copyright-wrapper">
+                <p class="text-body-2">© 2024 Nathapong Nurae. All rights reserved.</p>
+            </div>
         </div>
-        <a href="https://www.linkedin.com/in/nathapongn/" target="_blank">
-            <img src="Asset-Home/Social-icon/Linkedin.svg" title="Go To Linkedin">
-        </a>
-    </footer>
 
-<script src="script.js"></script>
-
-<script src="typed.js"></script>
-<script>
-    var typed = new Typed (".animate", {
-        strings: ["Nat", "a UX Designer"],
-        typeSpeed: 70,
-        backSpeed: 70,
-        loop: true
-    });
-
-</script>
-
-</body>
+        <script src="script.js"></script>
+        <script src="darkmode.js"></script>
+    </body>
 </html>

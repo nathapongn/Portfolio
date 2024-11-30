@@ -1,0 +1,125 @@
+        <section class="work-history">
+            <h2 class="text-title-3-strong">Experience</h2>
+
+            <div class="experience">
+                <h1 class="company-name text-title-2">Siam Commercial Bank</h1>
+                
+                <div class="experience-wrapper">
+                    <div class="experience-label">
+                        <h2 class="job-title text-title-3-strong">Senior UX Designer</h2>
+                        <p class="job-duration text-body-1">Jan 2024 - Present</p>
+                        <p class="job-description text-body-2">Placeholder</p>
+                    </div>
+    
+                    <div class="experience-label">
+                        <h2 class="job-title text-title-3-strong">UX Designer</h2>
+                        <p class="job-duration text-body-1">Apr 2023 - Jan 2024</p>
+                        <p class="job-description text-body-2">Placeholder</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider solid">
+
+            <div class="experience">
+                <h1 class="company-name text-title-2">Digital Ventures</h1>
+                
+                <div class="experience-wrapper">
+                    <div class="experience-label">
+                        <h2 class="job-title text-title-3-strong">UX Designer</h2>
+                        <p class="job-duration text-body-1">Aug 2023 - Apr 2023</p>
+                        <p class="job-description text-body-2">Placeholder</p>
+                    </div>
+    
+                    <div class="experience-label">
+                        <h2 class="job-title text-title-3-strong">UX Design Intern</h2>
+                        <p class="job-duration text-body-1">Jan 2022 - Apr 2022</p>
+                        <p class="job-description text-body-2">Placeholder</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider solid">
+
+            <div class="experience">
+                <h1 class="company-name text-title-2">LINE MAN Wongnai</h1>
+                
+                <div class="experience-wrapper">
+                    <div class="experience-label">
+                        <h2 class="job-title text-title-3-strong">UX Design Intern</h2>
+                        <p class="job-duration text-body-1">Jun 2022 - Aug 2022</p>
+                        <p class="job-description text-body-2">Wongnai Merchant App - Coupon Journey, Ads Manager and Merchant Ranking System.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+.work-history{
+    display: flex;
+    flex-direction: column;
+    padding: var(--vertical-XL) var(--global-margin);
+    gap: var(--vertical-XL);
+}
+
+.experience{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--vertical-XXL);
+}
+.company-name, .experience-wrapper{
+    flex-basis: calc(50% - var(--vertical-XXXL));
+    gap: var(--vertical-XXL);
+    min-width: 300px;
+}
+.experience-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: var(--vertical-XXL);
+}
+
+.experience-label{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-label p:nth-child(3){
+    padding-top: var(--vertical-L);
+    max-width: 50ch;
+}
+
+
+<!-- <div class="section-header">
+    <div class="section-header-wrapper">
+        <p class="section-tile text-body-1-strong">Overview</p>
+        <p class="section-count text-body-1">001</p>
+    </div>
+</div> -->
+
+.section-header{
+    padding: var(--vertical-L) var(--global-margin);
+}
+
+.section-header-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--surface-outline);
+    padding-bottom: var(--vertical-M);
+    max-width: var(--wrapper-max-2);
+    text-align: center;
+}
+
+.section-header-wrapper h1, .section-header-wrapper p{
+    width: fit-content;
+}
+
+
+<div class="info-card">
+    <img class="info-card-icon" src="asset/image/project/flint/icon/icon-4.svg">
+    <h1 class="text-subtitle-1">Uninformative Interface</h1>
+    <p class="text-body-1">Full of trading jargons, symbols, and abbreviations without any descriptions. Overwhelming trading statistics but insufficient financial information or company details.</p>
+</div>
