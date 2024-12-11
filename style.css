@@ -496,6 +496,7 @@ button{
 .media video {
     flex-basis: calc(50% - var(--horizontal-XXXL));
     max-width: 600px;
+    width: 100%;
 }
 
 
