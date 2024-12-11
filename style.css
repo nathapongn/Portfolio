@@ -487,6 +487,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: var(--vertical-S);
+    width: 100%;
 }
 
 .media img,
