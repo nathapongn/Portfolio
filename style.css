@@ -486,6 +486,8 @@ button{
     border-radius: var(--radius-S);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: var(--vertical-S);
     width: 100%;
 }
