@@ -825,6 +825,15 @@ img.card-image{
     flex-direction: column;
     gap: var(--vertical-XXS);
 }
+.card-title-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--horizontal-XXS);
+}
+.mode-support{
+    width: 24px;
+}
 .card-arrow img{
     opacity: 0%;
     padding-right: var(--horizontal-XS);
