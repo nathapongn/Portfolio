@@ -489,7 +489,6 @@ button{
     justify-content: center;
     align-items: center;
     gap: var(--vertical-S);
-    width: 100%;
 }
 
 .media img,
