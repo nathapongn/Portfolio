@@ -184,7 +184,7 @@
 
 .text-body-1 {
     font-size: 1.25rem;
-    line-height: 26pt;
+    line-height: 24pt;
     color: var(--text-neutral-secondary);
 }
 
@@ -762,7 +762,7 @@ button{
     text-align: left;
 }
 .hero-wrapper p{
-    max-width: 40ch;
+    max-width: 50ch;
 }
 
 .portfolio{

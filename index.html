@@ -71,9 +71,9 @@
 
         <section class="hero">
             <div class="hero-wrapper">
-                <h1 class="greeting text-title-1">Hello!</h1>
+                <h1 class="text-title-1"><span class="greeting typing"></span></h1>
                 <p class="summary text-subtitle-1">
-                I'm Nat, a <span class="text-subtitle-1-strong accent">UX Designer</span> based in Bangkok. <br>Currently designing at <strong>SCB - Siam Commercial Bank</strong>, here to make banking easier, one pixel at a time.
+                I'm Nat, a <span class="text-subtitle-1-strong accent">UX Designer</span> based in Bangkok. Currently designing at <strong>SCB - Siam Commercial Bank</strong>, here to make banking easier, one pixel at a time.
                 </p>
             </div>
         </section>
@@ -159,6 +159,14 @@
 
         <script src="script.js"></script>
         <script src="darkmode.js"></script>
-        
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed(".typing", {
+                strings: ["Hello!", "Glad to see you here!"],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+        </script>
     </body>
 </html>
