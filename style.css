@@ -68,9 +68,11 @@
     --wrapper-max-1: 1280px;
 
     /* Custom Colors */
+    --bg-amper-20: #E7E7E7;
     --bg-flint-20: #DCE9FD;
     --bg-nimbus-20: #EDE7FF;
 
+    --text-accent-amper: #FF286C;
     --text-accent-flint: #0062F4;
     --text-accent-nimbus: #6F3FCC;
     
@@ -106,7 +108,9 @@
 
     --bg-flint-20: #182453;
     --bg-nimbus-20: #2C333A;
+    --bg-amper-20: #E7E7E7;
 
+    --text-accent-amper: #FF286C;
     --text-accent-flint: #62A0F8;
     --text-accent-nimbus: #8d41ff;
 }
@@ -436,13 +440,16 @@ button{
     color: var(--text-neutral-primary);
     border-radius: var(--radius-S);
 }
-
+.tag.amper{
+    color: var(--text-accent-amper);   
+}
 .tag.flint{
     color: var(--text-accent-flint);
 }
 .tag.nimbus{
     color: var(--text-accent-nimbus);
 }
+
 
 /* Global Section Styling */
 .media-block {
@@ -799,6 +806,7 @@ button{
     width: 100%;
     cursor: pointer;
     transition: 300ms;
+    position: relative;
 }
 .card:hover{
     scale: 99%;
@@ -813,10 +821,14 @@ button{
     height: 400px;
 }
 img.card-image{
-    /* Keep image always in view */
     height: 100%;
     width: auto;
 }
+video.card-video{
+    width: 100%;
+    height: auto;
+}
+
 .card-footer{
     background-color: var(--surface-foreground-1);
     padding: var(--vertical-XL) var(--horizontal-XL);
@@ -856,16 +868,18 @@ img.card-image{
 }
 
 /* Card Specific Custom Styling */
-
+.card-thumbnail.amper{
+    /* background-color: #FF286C; */
+}
 .card-thumbnail.nimbus{
     /* background-color: #8A4DFF; */
-    align-items: flex-end;
-    justify-content: flex-end;
+    padding: 3rem;
 }
 .card-image.nimbus{
     width: 100%;
     height: auto;
 }
+
 .card-thumbnail.lmwn{
     /* background-color: #2EAE7C; */
 }
@@ -875,26 +889,26 @@ img.card-image{
 
 .card-thumbnail.flint{
     /* background-color: #3F7CF1; */
-    align-items: flex-end;
 }
 .card-image.flint{
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
-
-
-
+.card.amper:hover > .card-thumbnail.amper{
+    transition: 300ms;
+    /* background-color: #FF286C; */
+}
 .card.nimbus:hover > .card-thumbnail.nimbus{
     transition: 300ms;
-    background-color: #8A4DFF;
+    /* background-color: #8A4DFF; */
 }
 .card.flint:hover > .card-thumbnail.flint{
     transition: 300ms;
-    background-color: #3F7CF1;
+    /* background-color: #3F7CF1; */
 }
 .card.lmwn:hover > .card-thumbnail.lmwn{
     transition: 300ms;
-    background-color: #32bb86;
+    /* background-color: #32bb86; */
 }
 
 /* About Page */
@@ -912,7 +926,7 @@ img.card-image{
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    gap: var(--horizontal-XL);
+    gap: var(--horizontal-L);
     padding: 0 var(--horizontal-M);
 }
 img.desktop-icon{

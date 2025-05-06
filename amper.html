@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <title>Portfolio - Nathapong Nurae</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="navigation-wrapper">
+                <div class="site-name-wrapper">
+                    <img class="dynamic-asset site-logo" src="" data-asset-light="asset/image/logo-light.svg" data-asset-dark="asset/image/logo-dark.svg" alt="">
+                    <a href="/" class="site-name text-title-3">Nathapong Nurae</a>
+                </div>
+
+                <div class="navigation-action">
+                    <div class="menu-list">
+                        <a href="index.html" class="work text-subtitle-2 menu">Work</a>
+                        <a href="about.html" class="about text-subtitle-2 menu">About</a>
+                    </div>
+    
+                    <button class="button-toggle-theme dark">
+                        <img src="asset/icon/dark.svg" data-icon-fill="asset/icon/dark-fill.svg" alt="Toggle Dark Mode">
+                    </button>
+                    <button class="button-toggle-theme light">
+                        <img src="asset/icon/light.svg" data-icon-fill="asset/icon/light-fill.svg" alt="Toggle Light Mode">
+                    </button>
+                </div>
+                
+                <div class="button-hamburger open">
+                    <img src="asset/icon/hamburger-open.svg" alt="Open Menu">
+                </div>
+            </div>
+        </nav>
+
+        <nav class="menu-hamburger">
+            <a href="index.html" class="work text-title-2 menu">Work</a>
+            <a href="about.html" class="about text-title-2 menu">About</a>
+
+            <button class="button-toggle-theme dark">
+                <img src="asset/icon/dark.svg" data-icon-fill="asset/icon/dark-fill.svg" alt="Toggle Dark Mode">
+            </button>
+            <button class="button-toggle-theme light">
+                <img src="asset/icon/light.svg" data-icon-fill="asset/icon/light-fill.svg" alt="Toggle Light Mode">
+            </button>
+
+            <div class="button-hamburger close">
+                <img src="asset/icon/hamburger-close.svg" alt="Open Menu">
+            </div>
+        </nav>
+
+        <section class="project-image">
+            <picture>
+                <source class="dynamic-asset" srcset="" 
+                data-asset-light="asset/image/project/flint/project-image-light-S.png" 
+                data-asset-dark="asset/image/project/flint/project-image-dark-S.png"
+                media="(max-width: 768px)"
+                >
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/project-image-light-XL.png" data-asset-dark="asset/image/project/flint/project-image-dark-XL.png">
+            </picture>
+        </section>
+
+        <div class="project-header">
+            <div class="project-header-wrapper">
+                <div>
+                    <h1 class="project-name text-title-1">Amper</h1>
+                    <p class="text-body-1">EV Charging, one app, more providers, less hassle.</p>
+                </div>
+                <div>
+                    <h1 class="text-body-1-strong">Tools</h1>
+                    <p class="text-body-1">Figma</p>
+                    <p class="text-body-1">GPT-4o</p>
+                    <p class="text-body-1">Adobe Premiere</p>
+                    <p class="text-body-1">Adobe Photoshop</p>
+                </div>
+                <div>
+                    <h1 class="text-body-1-strong">Duration</h1>
+                    <p class="text-body-1">Feb 25 - Apr 25</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="media-grid">
+            <div class="media-grid-wrapper">
+                <div class="media bg-amper-20">
+                    <img src="asset/image/project/amper/problem-1.png" alt="">
+                </div>
+                <div class="media-label">
+                    <div class="tag text-body-2-strong amper">Problem</div>
+                    <h2 class="media-title text-title-2">Fragmented Networks</h2>
+                    <p class="media-subtitle text-body-1">
+                    As electric vehicles rapidly gain popularity in Thailand, so do the expansion of public EV chargers. But with growth comes fragmentation. <strong>Each charging provider operates its own app</strong>, leading many EV users to juggle multiple apps just to stay charged.
+                    <br><br>
+                    With each provider comes a different interface, user journey, and payment method—forcing drivers to constantly relearn how to charge depending on where they go.
+                    <br><br>
+                    For many EV drivers, the biggest obstacle isn't finding a charger—it's navigating the messy ecosystem around it.
+                    </p>
+                </div>
+                <div class="media bg-amper-20">
+                    <img class="dynamic-asset" src="" data-asset-light="asset/image/project/amper/problem-2-light.png" data-asset-dark="asset/image/project/flint/problem-2-dark.png"  alt=""> 
+                </div>
+            </div>
+        </section>
+
+        <div class="info-block">
+            <div class="info-wrapper">
+                <div class="info-label">
+                    <h1 class="info-header text-title-2">Thailand's EV Statistics</h1>
+                </div>
+
+                <div class="info-card-wrapper three-cards">
+                    <div class="info-card">
+                        <img class="info-card-icon" src="asset/image/project/amper/icon/icon-1.svg">
+                        <h1 class="text-title-1">+684%</h1>
+                        <p class="text-body-1">Growth in EV registrations in Thailand from 2022 to 2023.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <img class="info-card-icon" src="asset/image/project/amper/icon/icon-2.svg">
+                        <h1 class="text-title-1">11,467</h1>
+                        <p class="text-body-1">Charging plugs available nationwide as of December 2024.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <img class="info-card-icon" src="asset/image/project/amper/icon/icon-3.svg">
+                        <h1 class="text-title-1">15</h1>
+                        <p class="text-body-1">public charger providers—each with their own app as of January 2025.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="media-block">
+            <div class="media-wrapper">
+                <div class="media bg-flint-20">
+                    <img src="asset/image/project/flint/context.png" alt="Context">
+                </div>
+                <div class="media-label">
+                    <div class="tag text-body-2-strong flint">Objective</div>
+                    <h2 class="media-title text-title-2">Unify Public EV Chargers</h2>
+                    <p class="media-subtitle text-body-1">
+                    
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="media-block">
+            <div class="media-wrapper single bg-neutral10">
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/comp-light.png" data-asset-dark="asset/image/project/flint/comp-dark.png" alt="Objective for an Informative Investing Experience">
+            </div>
+        </section>
+
+
+        <div class="info-block">
+            <div class="info-wrapper">
+                <div class="info-label">
+                    <h1 class="info-header text-title-2">Public EV Chargers Provider Analysis</h1>
+                    <p class="text-body-1">Research into major public EV charger providers in Thailand <strong>revealed four common user journey patterns</strong>—each with different levels of complexity and interaction. Designing Amper required supporting all of these flows while identifying opportunities to streamline and improve the experience.</p>
+                </div>
+                <div class="info-card-wrapper two-cards">
+                    <div class="info-card">
+                        <h1 class="text-subtitle-1">Dedicated QR, Charged by kWh</h1>
+                        <p class="text-body-1">
+                            
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h1 class="text-subtitle-1">Dedicated QR, Charged by Other Units</h1>
+                        <p class="text-body-1">
+                            
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h1 class="text-subtitle-1">No QR or shared QR per Station</h1>
+                        <p class="text-body-1">
+                            
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h1 class="text-subtitle-1">Special Cases with Extra Steps</h1>
+                        <p class="text-body-1">
+                            
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="media-block">
+            <div class="media-title">
+                <h2 class="text-title-2">Risks of uninformative interface</h2>
+                <p class="text-body-1">Insufficient information leads to over-reliance on external information which then leads to misinformation and bias.</p>
+            </div>
+            <div class="media-wrapper single">
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/flow-problem-light.png" data-asset-dark="asset/image/project/flint/flow-problem-dark.png" alt="Problem with Uninformative Investing Environment">
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-wrapper">
+                <div class="media">
+                    <video class="dynamic-asset" type="video/mp4" src="" data-asset-light="asset/image/project/flint/onboard-light.mp4" data-asset-dark="asset/image/project/flint/onboard-dark.mp4" autoplay loop muted playsinline></video>
+                </div>
+            
+                <div class="media-label">
+                    <h2 class="media-title text-title-2">Objective</h2>
+                    <p class="media-subtitle text-body-1">Make investing less intimidating by providing an informative investing environment through a modern and inviting user-friendly interface with new added features to enhance convenience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-title">
+                <h2 class="text-title-2">Discoverability</h2>
+                <p class="text-body-1">Reducing the reliance on external sources of information empowers users to make well-informed choices.</p>    
+            </div>
+            <div class="media-wrapper single">
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/flow-objective-light.png" data-asset-dark="asset/image/project/flint/flow-objective-dark.png" alt="Objective for an Informative Investing Experience">
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-wrapper pair">
+                <div class="media">
+                    <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/wireframe-1-light.webp" data-asset-dark="asset/image/project/flint/wireframe-1-dark.webp" alt="Wireframe Sketches">
+                </div>
+                <div class="media">
+                    <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/wireframe-2-light.webp" data-asset-dark="asset/image/project/flint/wireframe-2-dark.webp" alt="Wireframe Sketches">
+                </div>
+            </div>
+        </section>
+
+        
+        <div class="section-title">
+            <h2 class="text-title-2">Design Solution</h2>
+        </div>
+
+        <section class="media-block">
+            <div class="media-wrapper grid flint">
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/showcase-1-light.png" data-asset-dark="asset/image/project/flint/showcase-1-dark.png">
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/showcase-2-light.png" data-asset-dark="asset/image/project/flint/showcase-2-dark.png">
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/showcase-3-light.png" data-asset-dark="asset/image/project/flint/showcase-3-dark.png">
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-wrapper">
+                <div class="media">
+                    <video class="dynamic-asset" type="video/mp4" src="" data-asset-light="asset/image/project/flint/home-light.mp4" data-asset-dark="asset/image/project/flint/home-dark.mp4" autoplay loop muted playsinline></video>
+                </div>
+            
+                <div class="media-label">
+                    <div class="tag text-body-2-strong flint">Personalized</div>
+                    <h1 class="media-title text-title-2">Home</h1>
+                    <p class="media-subtitle text-body-1">A distraction-free environment that allows users to stay on top of their investments, track goals, read the latest articles to stay informed, and view upcoming events such as dividend payout dates, economic data releases, and earnings reports, all personalized to their holdings and watchlists.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-wrapper mirror">
+                <div class="media">
+                    <video class="dynamic-asset" type="video/mp4" src="" data-asset-light="asset/image/project/flint/invest-light.mp4" data-asset-dark="asset/image/project/flint/invest-dark.mp4" autoplay loop muted playsinline></video>
+                </div>
+            
+                <div class="media-label">
+                    <div class="tag text-body-2-strong flint">Accessible</div>
+                    <h2 class="media-title text-title-2">Investing</h2>
+                    <p class="media-subtitle text-body-1">Odd lot purchases (orders of fewer than 100 shares) are integrated into Thai stock investing. Enhancing the transparency of the odd lot feature makes high-priced largecap stocks more accessible and reduces the risk of investors feeling compelled to invest in lower-priced, often more volatile, stocks.
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="media-block">
+            <div class="media-wrapper">
+                <div class="media">
+                    <video class="dynamic-asset" type="video/mp4" src="" data-asset-light="asset/image/project/flint/info-light.mp4" data-asset-dark="asset/image/project/flint/info-dark.mp4" autoplay loop muted playsinline></video>
+                </div>
+            
+                <div class="media-label">
+                    <div class="tag text-body-2-strong flint">Insightful</div>
+                    <h2 class="media-title text-title-2">Securities Information</h2>
+                    <p class="media-subtitle text-body-1">To enhance discoverability, each security includes extensive statistic and financial informatiom. Additionally, trading jargon, abbreviations, and symbols are accompanied by informative bottom sheets that open with a tap, ensuring investors stay well-informed and lowering the need for external sources.</p>
+                </div>
+            </div>
+        </section>
+        <section class="media-block">
+            <div class="media-title">
+                <h2 class="text-title-2">Alert Bottom Sheet</h2>
+                <p class="text-body-1">Automatically opens when users enter a security that requires additional acknowledgment.</p>
+            </div>
+            <div class="media-wrapper">
+                <div class="media">
+                    <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/alert-1-light.png" data-asset-dark="asset/image/project/flint/alert-1-dark.png" alt="Trading Alert Warning Bottom Sheet">
+                    <p class="media-caption text-body-1">Market Surveillance Alert</p>
+                </div>
+                <div class="media">
+                    <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/alert-2-light.png" data-asset-dark="asset/image/project/flint/alert-2-dark.png" alt="Trading Alert Warning Bottom Sheet">
+                    <p class="media-caption text-body-1">Tax Benefit Fund (SSF & RMF)</p>
+                </div>
+                <div class="media">
+                    <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/alert-3-light.png" data-asset-dark="asset/image/project/flint/alert-3-dark.png" alt="Trading Alert Warning Bottom Sheet">
+                    <p class="media-caption text-body-1">High Risk Equity</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-wrapper mirror">
+                <div class="media">
+                    <video class="dynamic-asset" type="video/mp4" src="" data-asset-light="asset/image/project/flint/wallet-light.mp4" data-asset-dark="asset/image/project/flint/wallet-dark.mp4" autoplay loop muted playsinline></video>
+                </div>
+            
+                <div class="media-label">
+                    <div class="tag text-body-2-strong flint">Instantaneous</div>
+                    <h2 class="media-title text-title-2">Wallet</h2>
+                    <p class="media-subtitle text-body-1">Like a regular savings account, users can invest directly from their wallet's available balance or spend from their cash balance via bank transfer, QR payment, and cash card. Eliminating the 1-2 business day withdrawal process of a typical brokerage account.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-wrapper">
+                <div class="media">
+                    <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/cashcard-light.png" data-asset-dark="asset/image/project/flint/cashcard-dark.png"></img>
+                </div>
+            
+                <div class="media-label">
+                    <div class="tag text-body-2-strong flint">Convenient</div>
+                    <h2 class="media-title text-title-2">Cash Card</h2>
+                    <p class="media-subtitle text-body-1">Flint's cash card provides a hassle-free way to spend or withdraw cash from an ATM directly from the THB cash balance. Real-time access to the cash balance makes deposit commitments less intimidating for beginners.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-title">
+            <h2 class="text-title-2">Style Guide</h2>
+        </div>
+
+        <section class="media-block">
+            <div class="media-wrapper single">
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/sheet01-light.png" data-asset-dark="asset/image/project/flint/sheet01-dark.png" alt="UI Design Style Guide Sheet">
+                <img class="dynamic-asset" src="" data-asset-light="asset/image/project/flint/sheet02-light.png" data-asset-dark="asset/image/project/flint/sheet02-dark.png" alt="UI Design Style Guide Sheet">
+                <video class="dynamic-asset" type="video/mp4" src="" data-asset-light="asset/image/project/flint/motion-light.mp4" data-asset-dark="asset/image/project/flint/motion-dark.mp4" autoplay loop muted playsinline></video>
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-wrapper">
+                <div class="media">
+                    <img src="asset/image/project/flint/ad-01.png"></img>
+                </div>
+            
+                <div class="media-label">
+                    <h2 class="media-title text-title-2">Reflections</h2>
+                    <p class="media-subtitle text-body-1">
+                    This project was inspired by challenges I faced when starting my investing journey, along with similar experiences shared by others in social media investment groups.
+                    <br><br>
+                    Initially envisioned as a smaller project, further research revealed more areas for improvement, leading to expanded solutions beyond UI enhancements. As the scope grew, I learned to build a comprehensive design system from scratch to ensure consistency and integrated motion design to further enhance the user experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer invert-1">
+            <div class="footer-wrapper">
+                <div class="footer-contact">
+                    <div class="contact-label">
+                        <h2 class="contact-title text-title-2">Liking what you're seeing?</h2>
+                        <p class="contact-subtitle text-subtitle-2">Let's work together!</p>
+                    </div>
+                    <img onclick="toLinkedin()" class="linkedin" src="asset/icon/linkedin.svg" alt="Go to my Linkedin Profile">
+                </div>
+                <hr class="divider">
+                <p class="text-body-2">Designed on Figma, made with Visual Studio Code.</p>
+            </div>
+        </footer>
+
+        <div class="copyright invert-2">
+            <div class="copyright-wrapper">
+                <p class="text-body-2">© 2024 Nathapong Nurae. All rights reserved.</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="darkmode.js"></script>
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init({
+                startEvent: 'load'
+            });
+        </script>
+    </body>
+</html>
