@@ -768,6 +768,8 @@ button{
 .hero-wrapper img{
     flex: 1;
     max-width: 400px;
+    width: 100%;
+    height: auto;
 }
 .hero-label{
     flex: 1;
