@@ -58,7 +58,3 @@ toggleButtons.forEach(button => {
         buttonIcon.setAttribute('src', defaultIcon);
     })
 })
-
-
-// Refresh AOS
-window.addEventListener('load', AOS.refresh);
