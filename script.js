@@ -1,10 +1,23 @@
 // Loader
 
 const loader = document.querySelector('.loader');
+const videos = Array.from(document.querySelectorAll('.dynamic-asset'))
+  .filter(el => el.tagName.toLowerCase() === 'video');
 
-window.addEventListener('load', () => {
-    loader.style.display = 'none';
-})
+let ready = 0;
+
+if (videos.length === 0) {
+  loader.style.display = 'none';
+} else {
+  videos.forEach(video => {
+    video.addEventListener('canplaythrough', () => {
+      ready++;
+      if (ready === videos.length) {
+        loader.style.display = 'none';
+      }
+    }, { once: true }); // ensures the event only triggers once per video
+  });
+}
 
 
 
