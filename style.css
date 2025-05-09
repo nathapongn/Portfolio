@@ -229,6 +229,21 @@ body {
     background-color: var(--surface-background);
 }
 
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--vertical-XS);
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background-color: var(--surface-background);
+}
+
 .navigation {
     display: flex;
     flex-direction: row;

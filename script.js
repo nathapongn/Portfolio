@@ -1,3 +1,11 @@
+// Loader
+
+const loader = document.querySelector('.loader');
+
+loader.addEventListener('load', () => {
+    loader.style.display = 'flex';
+})
+
 // Redirect to Linkedin by opening new window
 
 const buttonLinkedin = document.querySelector('.linkedin');
