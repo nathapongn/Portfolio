@@ -2,7 +2,7 @@
 
 const loader = document.querySelector('.loader');
 
-window.addEventListener('load', () => {
+window.addEventListener('canplaythrough', () => {
     loader.style.display = 'none';
 })
 
