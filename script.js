@@ -2,9 +2,11 @@
 
 const loader = document.querySelector('.loader');
 
-window.addEventListener('canplaythrough', () => {
+window.addEventListener('load', () => {
     loader.style.display = 'none';
 })
+
+
 
 // Redirect to Linkedin by opening new window
 
