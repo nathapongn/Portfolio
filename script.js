@@ -1,32 +1,10 @@
 // Loader
 
 const loader = document.querySelector('.loader');
-const videos = Array.from(document.querySelectorAll('.dynamic-asset'))
-  .filter(el => el.tagName.toLowerCase() === 'video');
 
-videos.forEach(video => {
-const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-const src = video.dataset[`asset${theme.charAt(0).toUpperCase() + theme.slice(1)}`];
-
-if (src) {
-    video.src = src;
-}
-});
-
-let ready = 0;
-
-if (videos.length === 0) {
-  loader.style.display = 'none';
-} else {
-  videos.forEach(video => {
-    video.addEventListener('canplaythrough', () => {
-      ready++;
-      if (ready === videos.length) {
-        loader.style.display = 'none';
-      }
-    }, { once: true }); // ensures the event only triggers once per video
-  });
-}
+window.addEventListener('load', () => {
+    loader.style.display = 'none';
+})
 
 
 // Redirect to Linkedin by opening new window
