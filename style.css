@@ -233,7 +233,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -242,6 +242,7 @@ body {
     height: 100vh;
     z-index: 99;
     background-color: var(--surface-background);
+    transition: ease-out 300ms;
 }
 
 .navigation {
