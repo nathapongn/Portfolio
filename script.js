@@ -4,6 +4,15 @@ const loader = document.querySelector('.loader');
 const videos = Array.from(document.querySelectorAll('.dynamic-asset'))
   .filter(el => el.tagName.toLowerCase() === 'video');
 
+videos.forEach(video => {
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const src = video.dataset[`asset${theme.charAt(0).toUpperCase() + theme.slice(1)}`];
+
+if (src) {
+    video.src = src;
+}
+});
+
 let ready = 0;
 
 if (videos.length === 0) {
@@ -18,7 +27,6 @@ if (videos.length === 0) {
     }, { once: true }); // ensures the event only triggers once per video
   });
 }
-
 
 
 // Redirect to Linkedin by opening new window
