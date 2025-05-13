@@ -68,7 +68,7 @@
     --wrapper-max-1: 1280px;
 
     /* Custom Colors */
-    --bg-amper-20: #E7E7E7;
+    --bg-amper-20: rgba(0, 0, 0, 0.05);
     --bg-flint-20: #DCE9FD;
     --bg-nimbus-20: #EDE7FF;
 
@@ -106,9 +106,9 @@
     --elevation-1: rgba(0, 98, 244, 0.05) 0px 2px 16px;
     --elevation-2: rgba(0, 98, 244, 0.1) 0px 3px 32px;
 
+    --bg-amper-20: rgba(255, 255, 255, 0.05);
     --bg-flint-20: #182453;
     --bg-nimbus-20: #2C333A;
-    --bg-amper-20: #E7E7E7;
 
     --text-accent-amper: #FF286C;
     --text-accent-flint: #62A0F8;
@@ -216,6 +216,9 @@
 }
 .bg-nimbus-20 {
     background-color: var(--bg-nimbus-20);
+}
+.bg-amper-20 {
+    background-color: var(--bg-amper-20);
 }
 .bg-neutral-10 {
     background-color: var(--surface-foreground-1);
@@ -500,7 +503,6 @@ button{
     gap: var(--vertical-XXXL);
     max-width: var(--wrapper-max-1);
     width: 100%;
-    border-radius: var(--radius-S);
 }
 
 /* Media Container */
@@ -518,6 +520,7 @@ button{
     flex-basis: calc(50% - var(--horizontal-XXXL));
     max-width: 600px;
     width: 100%;
+    border-radius: var(--radius-S);
 }
 
 

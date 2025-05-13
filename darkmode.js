@@ -1,7 +1,7 @@
 // Find All Theme Toggle Buttons
 const toggle = document.querySelectorAll('.button-toggle-theme');
 const toggleDark = document.querySelectorAll('.button-toggle-theme.dark'); 
-const toggleLight = document.querySelectorAll('.button-toggle-theme.light'); 
+const toggleLight = document.querySelectorAll('.button-toggle-theme.light');
 
 // Apply Dark Mode
 function applyDarkMode () {
@@ -36,6 +36,19 @@ function switchAssetToLight () {
         asset.setAttribute('src', lightAsset);
         asset.setAttribute('srcset', lightAsset);
     });
+
+    // Poster for card-thumbnail video elements
+    const thumbnailVideos = document.querySelectorAll('.card-thumbnail video');
+
+    thumbnailVideos.forEach(video => {
+        const lightPoster = video.getAttribute('data-poster-light');
+        if (lightPoster) {
+            video.setAttribute('poster', lightPoster);
+        }
+        else {
+            video.removeAttribute('poster')
+        }
+    })
 }
 
 // Switch Assets to Dark, taget class name "dynamic-asset", support both src and srcset
@@ -49,6 +62,19 @@ function switchAssetToDark () {
         asset.setAttribute('src', darkAsset);
         asset.setAttribute('srcset', darkAsset);
     });
+
+    // Poster for card-thumbnail video elements
+    const thumbnailVideos = document.querySelectorAll('.card-thumbnail video');
+
+    thumbnailVideos.forEach(video => {
+        const darkPoster = video.getAttribute('data-poster-dark');
+        if (darkPoster) {
+            video.setAttribute('poster', darkPoster);
+        }
+        else {
+            video.removeAttribute('poster')
+        }
+    })
 }
 
 
