@@ -713,6 +713,7 @@ button{
 
 .info-card-icon{
     margin-bottom: var(--vertical-S);
+    width: 80px;
 }
 
 .info-card h1{
