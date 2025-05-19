@@ -556,6 +556,7 @@ button{
 
 .media-wrapper.single,
 .media-wrapper.pair {
+    align-items: center;
     justify-content: center;
 }
 
