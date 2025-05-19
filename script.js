@@ -1,14 +1,14 @@
 // Loader
-
 const loader = document.querySelector('.loader');
 
 window.addEventListener('load', () => {
     loader.style.display = 'none';
 })
 
+// Copyright Update
+document.querySelector('.current-year').textContent = new Date().getFullYear();
 
 // Redirect to Linkedin by opening new window
-
 const buttonLinkedin = document.querySelector('.linkedin');
 
 buttonLinkedin.addEventListener('click', () => {
@@ -24,7 +24,6 @@ siteLogo.addEventListener('click', () => {
 
 
 // Hamburger Menu for Mobile
-
 const buttonMenuOpen = document.querySelector('.button-hamburger.open');
 const buttonMenuClose = document.querySelector('.button-hamburger.close');
 const mobileMenu = document.querySelector('.menu-hamburger')
@@ -42,7 +41,6 @@ buttonMenuClose.addEventListener('click', () => {
 })
 
 // Hover Theme Toggle Button Effect
-
 const toggleButtons = document.querySelectorAll('.button-toggle-theme');
 
 toggleButtons.forEach(button => {
