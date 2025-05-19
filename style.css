@@ -233,6 +233,20 @@
     background-color: var(--surface-foreground-2);
 }
 
+/* Sizing */
+.size-XXL{
+    width: 80px;
+    height: auto;
+}
+.size-XL{
+    width: 64px;
+    height: auto;
+}
+.size-L{
+    width: 44px;
+    height: auto;
+}
+
 /* Global Navigation Styling */
 body {
     background-color: var(--surface-background);
@@ -713,7 +727,6 @@ button{
 
 .info-card-icon{
     margin-bottom: var(--vertical-S);
-    width: 80px;
 }
 
 .info-card h1{
