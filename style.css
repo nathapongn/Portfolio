@@ -215,6 +215,10 @@
 .underline:hover{
     color: var(--accent-dark);
 }
+.bullet-point{
+    list-style: none;
+    line-height: var(--vertical-XXL);
+}
 
 /* Custom Surface Color */
 .bg-flint-20 {
