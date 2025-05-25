@@ -431,6 +431,8 @@ img.site-logo{
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
+    gap: var(--horizontal-XL);
+    flex-wrap: wrap;
 }
 .contact {
     display: flex;
@@ -771,8 +773,11 @@ picture{
 .project-image{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: var(--surface-foreground-2);
+    max-height: 80vh;
+    overflow: hidden;
 }
 .project-image picture img, .project-image picture source{
     width: 100%;
@@ -995,7 +1000,6 @@ picture{
     padding: var(--vertical-XXL);
 }
 .card-image.lmwn{
-    padding: 1rem;
     width: 100%;
     height: auto;
 }
@@ -1062,7 +1066,7 @@ img.desktop-icon{
     }
     /* Media Grid */
     .media-grid-wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         grid-template-rows: auto;
     }
     .media-grid-wrapper div{
