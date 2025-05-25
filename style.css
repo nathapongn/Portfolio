@@ -923,7 +923,7 @@ picture{
 .card-gradient{
     opacity: 0;
     position: absolute;
-    width: auto;
+    width: 100%;
     height: 100%;
     z-index: 1;
 }
@@ -995,7 +995,9 @@ picture{
     padding: var(--vertical-XXL);
 }
 .card-image.lmwn{
-    padding: 1.2rem;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
 }
 
 .card.amper:hover > .card-thumbnail.amper{
