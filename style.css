@@ -267,7 +267,7 @@ body {
     gap: var(--vertical-XS);
     width: 100vw;
     height: 100vh;
-    z-index: 99;
+    z-index: 100;
     background-color: var(--surface-background);
 }
 
@@ -277,7 +277,7 @@ body {
     justify-content: center;
     align-items: center;
     top: 0;
-    z-index: 2;
+    z-index: 99;
     position: sticky;
     padding: var(--vertical-M) var(--global-margin);
     background-color: var(--surface-foreground-blur);
@@ -385,7 +385,7 @@ img.site-logo{
     position: fixed;
     top: -100%;
     display: none;
-    z-index: 3;
+    z-index: 100;
     opacity: 0;
 }
 
