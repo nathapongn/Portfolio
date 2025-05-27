@@ -21,7 +21,10 @@
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Font -->
         <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <title>Portfolio - Nathapong Nurae</title>
     </head>
@@ -99,7 +102,7 @@
         <section class="portfolio">
             <div class="portfolio-wrapper">
 
-                <a href="nimbus.html" class="card nimbus">
+                <a href="nimbus.html" class="card nimbus" data-aos="fade-up" data-aos-duration="500">
                     <div class="card-thumbnail video nimbus">
                         <video 
                             class="dynamic-asset card-video nimbus"
@@ -128,7 +131,7 @@
                     </div>
                 </a>
     
-                <a href="flint.html" class="card flint">
+                <a href="flint.html" class="card flint" data-aos="fade-up" data-aos-duration="500">
                     <div class="card-thumbnail video flint">
                         <video 
                             class="dynamic-asset card-video flint"
@@ -157,7 +160,7 @@
                     </div>
                 </a>
 
-                <a href="amper.html" class="card amper">
+                <a href="amper.html" class="card amper" data-aos="fade-up" data-aos-duration="500">
                     <div class="card-thumbnail amper">
                         <img
                             class="dynamic-asset card-image amper"
@@ -184,7 +187,7 @@
                 </a>
 
     
-                <a href="lmwn.html" class="card lmwn">
+                <a href="lmwn.html" class="card lmwn" data-aos="fade-up" data-aos-duration="500">
                     <div class="card-thumbnail lmwn">
                         <img class="card-image lmwn" src="asset/image/project/lmwn/thumbnail.webp" alt="">
                         <img class="card-gradient" src="asset/image/project/lmwn/thumbnail-gradient.webp">
@@ -236,5 +239,7 @@
                 loop: true
             });
         </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>
