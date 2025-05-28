@@ -58,3 +58,41 @@ toggleButtons.forEach(button => {
         buttonIcon.setAttribute('src', defaultIcon);
     })
 })
+
+
+// Video Playback
+document.addEventListener('DOMContentLoaded', () => {
+  const video = document.querySelector('video.dynamic-asset[type="video/mp4"]');
+  if (!video) return;
+
+  const progressCircle = document.querySelector('.video-progress-indicator');
+  const radius = progressCircle.r.baseVal.value;
+  const circumference = 2 * Math.PI * radius;
+
+  function setProgress(percent) {
+    const offset = circumference - (percent * circumference);
+    progressCircle.style.strokeDashoffset = offset;
+  }
+
+  progressCircle.style.strokeDasharray = `${circumference}`;
+  progressCircle.style.strokeDashoffset = `${circumference}`;
+
+  video.addEventListener('timeupdate', () => {
+    if (!video.duration) return; // prevent division by 0
+    const percent = video.currentTime / video.duration;
+    setProgress(percent);
+  });
+
+  // Optional: detect freezing
+  let lastTime = 0;
+  setInterval(() => {
+    if (!video.paused && !video.ended) {
+      if (video.currentTime === lastTime) {
+        progressCircle.style.stroke = '#ff4444'; // Red if possibly frozen
+      } else {
+        progressCircle.style.stroke = '#00cc99'; // Normal
+        lastTime = video.currentTime;
+      }
+    }
+  }, 1000);
+});
