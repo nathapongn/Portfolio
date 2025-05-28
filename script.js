@@ -1,10 +1,3 @@
-// Loader
-const loader = document.querySelector('.loader');
-
-window.addEventListener('load', () => {
-    loader.style.display = 'none';
-})
-
 // Copyright Update
 document.querySelector('.current-year').textContent = new Date().getFullYear();
 
