@@ -63,34 +63,34 @@ toggleButtons.forEach(button => {
 // Video Playback
 document.addEventListener('DOMContentLoaded', () => {
   const video = document.querySelector('video.dynamic-asset[type="video/mp4"]');
-  if (!video) return;
-
   const progressCircle = document.querySelector('.video-progress-indicator');
+  if (!video || !progressCircle) return;
+
   const radius = progressCircle.r.baseVal.value;
   const circumference = 2 * Math.PI * radius;
+
+  progressCircle.style.strokeDasharray = `${circumference}`;
+  progressCircle.style.strokeDashoffset = `${circumference}`;
 
   function setProgress(percent) {
     const offset = circumference - (percent * circumference);
     progressCircle.style.strokeDashoffset = offset;
   }
 
-  progressCircle.style.strokeDasharray = `${circumference}`;
-  progressCircle.style.strokeDashoffset = `${circumference}`;
-
   video.addEventListener('timeupdate', () => {
-    if (!video.duration) return; // prevent division by 0
+    if (!video.duration) return;
     const percent = video.currentTime / video.duration;
     setProgress(percent);
   });
 
-  // Optional: detect freezing
+  // Detect freezing
   let lastTime = 0;
   setInterval(() => {
     if (!video.paused && !video.ended) {
       if (video.currentTime === lastTime) {
-        progressCircle.style.stroke = '#ff4444'; // Red if possibly frozen
+        progressCircle.classList.add('frozen');
       } else {
-        progressCircle.style.stroke = '#00cc99'; // Normal
+        progressCircle.classList.remove('frozen');
         lastTime = video.currentTime;
       }
     }
