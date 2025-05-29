@@ -764,6 +764,7 @@ button{
 }
 
 .video-progress-indicator {
+  transform: rotate(-90deg);
   stroke: var(--darkneutral-1100);
   transition: stroke 0.3s ease;
 }
