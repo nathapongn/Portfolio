@@ -63,34 +63,36 @@ toggleButtons.forEach(button => {
 // Video Playback
 document.addEventListener('DOMContentLoaded', () => {
   const video = document.querySelector('video.dynamic-asset[type="video/mp4"]');
-  const progressCircle = document.querySelector('.video-progress-indicator');
-  if (!video || !progressCircle) return;
+  const progressBar = document.querySelector('.video-progress-bar');
+  if (!video || !progressBar) return;
 
-  const radius = progressCircle.r.baseVal.value;
+  const radius = progressBar.r.baseVal.value;
   const circumference = 2 * Math.PI * radius;
 
-  progressCircle.style.strokeDasharray = `${circumference}`;
-  progressCircle.style.strokeDashoffset = `${circumference}`;
+  // Set up stroke dash values
+  progressBar.style.strokeDasharray = `${circumference}`;
+  progressBar.style.strokeDashoffset = `${circumference}`; // start empty
 
   function setProgress(percent) {
-    const offset = circumference - (percent * circumference);
-    progressCircle.style.strokeDashoffset = offset;
+    const offset = circumference - percent * circumference;
+    progressBar.style.strokeDashoffset = offset;
   }
 
+  // Update progress on timeupdate
   video.addEventListener('timeupdate', () => {
     if (!video.duration) return;
     const percent = video.currentTime / video.duration;
     setProgress(percent);
   });
 
-  // Detect freezing
+  // Freeze detection
   let lastTime = 0;
   setInterval(() => {
     if (!video.paused && !video.ended) {
       if (video.currentTime === lastTime) {
-        progressCircle.classList.add('frozen');
+        progressBar.classList.add('frozen');
       } else {
-        progressCircle.classList.remove('frozen');
+        progressBar.classList.remove('frozen');
         lastTime = video.currentTime;
       }
     }
