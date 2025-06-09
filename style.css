@@ -1101,23 +1101,6 @@ picture{
     height: auto;
 }
 
-.card.amper:hover > .card-thumbnail.amper{
-    transition: 300ms;
-    /* background-color: #FF286C; */
-}
-.card.nimbus:hover > .card-thumbnail.nimbus{
-    transition: 300ms;
-    /* background-color: #8A4DFF; */
-}
-.card.flint:hover > .card-thumbnail.flint{
-    transition: 300ms;
-    /* background-color: #3F7CF1; */
-}
-.card.lmwn:hover > .card-thumbnail.lmwn{
-    transition: 300ms;
-    /* background-color: #32bb86; */
-}
-
 /* About Page */
 
 .my-desktop{
@@ -1146,6 +1129,11 @@ img.desktop-icon{
 
 .project-image.lmwn {
     background: linear-gradient(67deg, #0577A4 20.54%, #27AC76 57.87%);
+}
+
+.project-image.scb {
+    justify-content: flex-end;
+    background: linear-gradient(180deg, #E4D7FF 0%, #C9AFFF 100%);
 }
 
 /* Breakpoint 1 */

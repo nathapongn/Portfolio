@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+        <title>Portfolio - Nathapong Nurae</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="navigation-wrapper">
+                <div class="site-name-wrapper">
+                    <img class="dynamic-asset site-logo" src="" data-asset-light="asset/image/logo-light.svg" data-asset-dark="asset/image/logo-dark.svg" alt="">
+                    <a href="index.html" class="site-name text-title-3">Nathapong Nurae</a>
+                </div>
+
+                <div class="navigation-action">
+                    <div class="menu-list">
+                        <a href="index.html" class="work text-subtitle-2 menu">Work</a>
+                        <a href="about.html" class="about text-subtitle-2 menu">About</a>
+                    </div>
+    
+                    <button class="button-toggle-theme dark">
+                        <img src="asset/icon/dark.svg" data-icon-fill="asset/icon/dark-fill.svg" alt="Toggle Dark Mode">
+                    </button>
+                    <button class="button-toggle-theme light">
+                        <img src="asset/icon/light.svg" data-icon-fill="asset/icon/light-fill.svg" alt="Toggle Light Mode">
+                    </button>
+                </div>
+                
+                <div class="button-hamburger open">
+                    <img src="asset/icon/hamburger-open.svg" alt="Open Menu">
+                </div>
+            </div>
+        </nav>
+
+        <nav class="menu-hamburger">
+            <a href="index.html" class="work text-title-2 menu">Work</a>
+            <a href="about.html" class="about text-title-2 menu">About</a>
+
+            <button class="button-toggle-theme dark">
+                <img src="asset/icon/dark.svg" data-icon-fill="asset/icon/dark-fill.svg" alt="Toggle Dark Mode">
+            </button>
+            <button class="button-toggle-theme light">
+                <img src="asset/icon/light.svg" data-icon-fill="asset/icon/light-fill.svg" alt="Toggle Light Mode">
+            </button>
+
+            <div class="button-hamburger close">
+                <img src="asset/icon/hamburger-close.svg" alt="Open Menu">
+            </div>
+        </nav>
+
+        <section class="project-image scb">
+            <picture>
+                <source srcset="asset/image/project/scb/project-image-S.png"
+                media="(max-width: 768px)"
+                >
+                <img src="asset/image/project/scb/project-image-XL.png" alt="Cover Image">
+            </picture>
+        </section>
+
+        <div class="project-header">
+            <div class="project-header-wrapper">
+                <div>
+                    <h1 class="project-name text-title-1">Siam Commercial Bank</h1>
+                    <p class="text-body-1">As a UX Designer on SCB's corporate solutions team, I design digital experiences for over 100,000 corporate clients.</p>
+                </div>
+                <div>
+                    <h1 class="text-body-1-strong">Duration</h1>
+                    <p class="text-body-1">Apr 23 - Present</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="media-block">
+            <div class="media-wrapper">
+                <div class="media">
+                    <img src="asset/image/project/scb/img-1.webp" alt="Products Preview">
+                </div>
+                <div class="media-label">
+                    <h2 class="media-title text-title-2">Products</h2>
+                    <p class="media-subtitle text-body-1">
+                        I design B2B financial products for both ends of the spectrum—from tailored, high-value solutions for Thailand's top enterprises to high-volume products serving a wide range of SMEs with varying levels of complexity and business needs. I also work on data-intensive internal tools that enable bank staffs to monitor and manage financial transactions behind the scenes. I design across responsive web and mobile applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="media-block">
+            <div class="media-wrapper mirror">
+                <div class="media">
+                    <img src="asset/image/project/scb/img-2.webp" alt="Design System">
+                </div>
+                <div class="media-label">
+                    <h2 class="media-title text-title-2">Design Systems</h2>
+                    <p class="media-subtitle text-body-1">
+                        I lead the creation, maintenance, and ongoing expansion of our design systems across multiple products—helping team members deliver faster, with greater consistency and fewer defects. By leveraging Figma variables, we improve component efficiency and streamline workflows across multiple languages. Our design system currently supports Thai, English, and Chinese.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="media-block">
+            <div class="media-wrapper single">
+                <div class="media">
+                    <img src="asset/image/project/scb/img-3.webp" alt="Snapshot">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer surface-static-0">
+            <div class="footer-wrapper">
+                <div class="footer-contact">
+                    <div class="contact-label">
+                        <h2 class="contact-title text-title-2">Liking what you're seeing?</h2>
+                        <p class="contact-subtitle text-subtitle-2">Let's work together!</p>
+                    </div>
+                    <img onclick="toLinkedin()" class="linkedin" src="asset/icon/linkedin.svg" alt="Go to my Linkedin Profile">
+                </div>
+                <hr class="divider">
+                <p class="text-body-2">Designed on Figma, made with Visual Studio Code.</p>
+            </div>
+        </footer>
+
+        <div class="copyright surface-static-1">
+            <div class="copyright-wrapper">
+                <p class="text-body-2">© <span class="current-year"></span> Nathapong Nurae. All rights reserved.</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="darkmode.js"></script>
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    </body>
+</html>
